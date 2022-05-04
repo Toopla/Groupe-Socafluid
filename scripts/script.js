@@ -1,3 +1,5 @@
+// Navbar
+
 $('.navTrigger').click(function () {
     $(this).toggleClass('active');
     console.log("Clicked menu");
@@ -14,6 +16,8 @@ $(window).scroll(function() {
         $('.nav').removeClass('affix');
     }
 });
+
+// Timeline
 
 (function () {
     "use strict";

@@ -1,32 +1,34 @@
 <?php
-if(isset($_POST['envoyer'])) {
-	if(!empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['societe']) AND !empty($_POST['telephone']) !empty($_POST['mail']) AND !empty($_POST['message'])) {
-		$header="MIME-Version: 1.0\r\n";
-		$header.='From:"Groupe-Socafluid.fr"<stagiaire@socafluid.fr>'."\n";
-		$header.='Content-Type:text/html; charset="uft-8"'."\n";
-		$header.='Content-Transfer-Encoding: 8bit';
-
-		$message='
-		<html>
-			<body>
-				<div align="center">
-					<u>Nom de l\'expéditeur :</u>'.$_POST['nom'].'<br />
-					<u>Prénom de l\'expéditeur :</u>'.$_POST['prenom'].'<br />
-					<u>Société de l\'expéditeur :</u>'.$_POST['prenom'].'<br />
-					<u>Numéro de téléphone de l\'expéditeur :</u>'.$_POST['prenom'].'<br />
-					<u>Mail de l\'expéditeur :</u>'.$_POST['mail'].'<br />
-					<u>
-					<br />
-					'.nl2br($_POST['message']).'
-				</div>
-			</body>
-		</html>
-		';
-
-		mail("stagiaire@socafluid.fr", "CONTACT - Groupe-Socafluid.fr", $message, $header);
-		$msg="Votre message a bien été envoyé !";
-	} else {
-		$msg="Tous les champs doivent être complétés !";
-	}
-}
+// Check for empty fields
+if(empty($_POST['nom'])  		||
+   empty($_POST['prenom']) 		||
+   empty($_POST['societe']) 		||
+   empty($_POST['telephone']) 		||
+   empty($_POST['email']) 		||
+   empty($_POST['message'])	||
+   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+   {
+	print_r("No arguments Provided! /////");
+	return false;
+   }
+	
+$nom = $_POST['nom'];
+$prenom = $_POST['prenom'];
+$societe = $_POST['societe'];
+$telephone = $_POST['telephone'];
+$email_address = $_POST['email'];
+$message = $_POST['message'];
+	
+// CREATION DE L'email
+$to = 'stagiaire@socafluid.fr'; // Add your email address in between the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Nouveau Message Site Groupe-socafluid.fr de la part de :  $noms";
+$email_body = "Nouveau message de la part de : \n\n\nNom: $nom\n\nPrénom: $prenom\n\nSociété : $societe\n\nTéléphone : $telephone\n\nEmail: $email_address\n\nMessage:\n$message";
+$headers = "MIME-Version: 1.0\r\n";
+$headers.= "From: =?utf-8?b?".base64_encode($nom)."?= <".$email_address.">\r\n";
+$headers.= "Content-Type: text/plain;charset=utf-8\r\n";
+$headers.= "Reply-To: $email_address\r\n"; 
+if (mail($to,$email_subject,$email_body,$headers) ) {
+    return true;
+} else { return false;
+       }
 ?>
