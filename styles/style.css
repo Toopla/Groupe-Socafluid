@@ -1217,15 +1217,22 @@ textarea {
 
 .footer div.container div.row div.col-12 div.contact-footer {
   font-size: 25px;
-  color: #FFFFFF;
-  background-color: #5D5D5D;
+  color: #3b95dc;
+  background-color: #FFFFFF;
   border-radius: 5px;
   max-width: 100px;
 }
 
 .footer div.container div.row div.col-12 div.contact-footer:hover {
+  background-color: #5D5D5D;
+}
+
+.footer div.container div.row div.col-12 i.fa-brands {
+  font-size: 40px;
+}
+
+.footer div.container div.row div.col-12 i.fa-brands:hover {
   color: #5D5D5D;
-  background-color: #FFFFFF;
 }
 
 .footer div.container div.row div.col-12 ul li {
@@ -1358,4 +1365,53 @@ textarea {
   .thumb div.a span {
     font-size: 14px;
   }
+}
+
+/* Page Annexe */
+
+.nav-tag {
+  height: 100px;
+  background-color: #3b95dc;
+}
+
+.plan-tag {
+  height: 130px;
+}
+
+.plan div.list {
+  margin-top: 50px;
+}
+
+.plan a {
+  text-decoration: none;
+  color: #3b95dc;
+}
+
+.plan a:hover {
+  text-decoration: underline;
+}
+
+.mentions-tag {
+  height: 130px;
+}
+
+.mentions h2 {
+  margin-top: 50px;
+}
+
+.reglementation-tag {
+  height: 130px;
+}
+
+.reglementation h2 {
+  margin-top: 50px;
+}
+
+.reglementation a {
+  text-decoration: none;
+  color: #3b95dc;
+}
+
+.reglementation a:hover {
+  text-decoration: underline;
 }

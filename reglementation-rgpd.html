@@ -5,8 +5,253 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reglementation RGPD</title>
+    <link rel="icon" type="images/png" href="images/Groupe-Socafluid.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/ce6f2cf725.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="container-fluid">
+            <a href="index.html"><img src="images/socafluid_logo.png"></a>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">Groupe Socafluid</a></li>
+                    <li><a href="https://sopra-pneumatic.com/">Sopra</a></li>
+                    <li><a href="https://setem-electrovanne.fr/">Setem</a></li>
+                    <li><a href="https://www.avalco.fr/">Avalco</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="nav-tag" id="nav-tag"></div>
+
+    <section class="reglementation">
+        <div class="reglementation-tag" id="reglementation-tag"></div>
+        <div class="container">
+            <div class="row">
+                <h1>Réglementation RGPD</h1>
+                <h2>Les traceurs et cookies sur notre site</h2>
+                <p>
+                    Conformément au RGPD (règlement général sur la protection des données), la loi stipule que nous ne pouvons stocker des cookies sur votre appareil que si vous avez donné votre consentement ou que s’ils sont strictement nécessaires au fonctionnement de ce site.
+                    <br><br>
+                    <!-- Le site que vous visitez utilise des cookies de variables de session et un traceur (Google Analytics).
+                    <br><br> -->
+                    Notre site n’utilise pas de cookie de publicité pour vous offrir des services ou des produits de sociétés tierces.
+                    <br><br>
+                    Les pictogrammes des réseaux sociaux qui pourraient être affichés (Facebook, Linkedin, Instragram, …) ne sont que des liens directs sur des pages de ses marques sans relevé d’informations.
+                    <br><br>
+                    Les seules données personnelles récoltées par le formulaire (et stockées) ne servent qu’à correspondre avec vous ou vous faire une proposition commerciale.
+                    <br>
+                    <b>En aucun cas elles sont transmises à un autre organisme.</b>
+                </p>
+                <!-- <h2>Le traceur</h2>
+                <p>
+                    Le traceur utilisé est GOOGLE ANALYTICS qui génère à lui seul une vintaine de cookies.
+                    <br>
+                    Nous utilisons ce traceur pour mémoriser vos préférences de navigation définis au cours de votre session et réaliser des statistiques anonymes de visites.
+                </p> -->
+                <h2>Les cookies</h2>
+                <p>
+                    Nous utilisons ce traceur pour mémoriser vos préférences de navigation définis au cours de votre session et réaliser des statistiques anonymes de visites.
+                    <br><br>
+                    Les cookies sont des petits fichiers stockés sur votre ordinateur lors de vos visites de sites internet. Des données y sont enregistrées.
+                    <br><br>
+                    Nos cookies utilisés, enregistrent simplement un numéro aléatoire et temporaire appelé variable de session. Aucune autre donnée y est stockée. Nos cookies nous servent pour le fonctionnement du code de sécurité du formulaire de contact (pour vous différencier d’un robot lors de l’envoi du message). Nos cookies se détruisent de manière automatique à la fin de votre session, c’est à dire lorsque vous quittez votre navigateur ou après une quinzaine de minutes d’inactivité sur ce site.
+                    <br><br>
+                    <b>Ces cookies sont dits « strictement nécessaire » et donc ne nécessite pas votre consentement préalable.</b>
+                </p>
+                <h2>Informations sur vos données personnels récoltées par formulaire</h2>
+                <p>
+                    Vos données personnelles sont donc mémorisées par le formulaire (nom / prénom / société / téléphone / email). Elle sont ensuite traitées par une personne dédiée aux fonctions de correspondances, d’établissement de devis, d’envoi de newsletters. Ces données, dites marketing sont conservées 3 ans maximum. Elle sont ensuite détruites de manière définitive si elles ne sont pas utilisées.
+                    <br><br>
+                    <b>Vos données ne servent en aucun cas à du profilage ou à une redistribution à d’autres organismes.</b>
+                    <br><br>
+                    Vous pouvez nous contacter pour exercer votre droit de modification ou de suppression de ces données. Votre message sera transmis à la personne qui tient le rôle de Délégué à la Protection des données. Elle contrôle et gère notre Politique de Confidentialité.
+                    <br><br>
+                    <a href="#form-tag">Je veux contacter le Délégué à la Protection des données.</a>
+                </p>
+                <h2>La CNIL</h2>
+                <p>
+                    L’utilisation des traceurs est régie par l’article 32 II de la loi n° 78-17 du 6 janvier 1978, transposant l’article 5.3 de la directive 2002/58/CE du parlement européen et du conseil du 12 juillet 2002 modifiée par la directive 2009/136/CE.
+                    <br>
+                    Pour en savoir plus sur les traceurs et les cookies, nous vous invitons à consulter le site de la CNIL : <a href="https://www.cnil.fr/">www.cnil.fr</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+            <!-- Form -->
+    <section class="form">
+        <div class="form-tag" id="form-tag"></div>
+        <div class="container text-center">
+            <div class="row">
+                <h1>FORMULAIRE DE CONTACT</h1>
+            </div>
+        </div>
+        <form method="post" action="scripts/contact.php">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-6"><input name="nom" type="text" class="feedback-input" placeholder="Nom" required/></div>
+                    <div class="col-6"><input name="prenom" type="text" class="feedback-input" placeholder="Prénom" required/></div>
+                    <div class="col-6"><input name="societe" type="text" class="feedback-input" placeholder="Société"/></div>
+                    <div class="col-6"><input name="telephone" type="text" class="feedback-input" placeholder="Téléphone" required/></div>
+                    <div class="col-12"><input name="email" type="text" class="feedback-input" placeholder="Adresse e-mail" required/></div>
+                    <div class="col-12"><textarea name="message" class="feedback-input" placeholder="Message" required></textarea></div>
+                    <div class="col-12"><input name="envoyer" type="submit" value="Envoyer"/></div>
+                </div>
+            </div>
+          </form>
+    </section>
+
+    <!-- RGPD -->
+    <section class="rgpd">
+        <div class="container">
+            <div class="row">
+                <p>
+                    Les données que vous renseignez dans ce formulaire sont traitées par le groupe Socafluid en qualité de responsable de traitement. L'ensemble de ces données est obligatoire si vous souhaitez être mis en relation avec le groupe Socafluid et/ou recevoir des informations et des offres commerciales de sa part. Vos données sont utilisées à des fins de gestion de votre relation commerciale, de prospection et/ou de mesure de l'audience de ce site. Vous disposez d'un droit d'accès, de rectification, d'effacement de ces données, d'un droit de limitation du traitement, d'un droit d'opposition, du droit à la portabilité de vos données et du droit d'introduite une réclamation auprès d'une autorité de contrôle (en France, la CNIL).
+                    <br><br>
+                    Pour en savoir plus sur la RGPD sur notre site, voir la <a href="reglementation-rgpd.html">réglementation RGPD</a>.
+                    <br><br>
+                    Pour prendre contact avec nous sur ce sujet, veuillez renseigner ce formulaire ci-dessus en précisant votre demande.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions -->
+    <section class="questions">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h2>Question 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis nec mauris eu tellus ullamcorper cursus. Donec scelerisque ante non mauris. Sed faucibus tortor eu tellus. Maecenas eget tortor eget sapien aliquet ultrices.</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h2>Question 2</h2>
+                    <p>In vitae neque dictum risus luctus venenatis. Sed aliquet bibendum risus. Duis gravida urna ut felis. Integer pede lacus, eleifend ut, pellentesque eu, molestie non, nunc. In sed odio. Sed vitae metus a justo bibendum ultricies. Nulla semper sem at lorem.</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h2>Question 3</h2>
+                    <p>Nulla semper sem at lorem. Mauris commodo dui a turpis. Quisque dignissim, neque vitae laoreet dictum, pede lacus vehicula eros, at porta libero velit vel purus. Donec varius dignissim est. Sed accumsan elit at pede. Aenean convallis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <img src="images/socafluid_logo.png">
+                    <p id="copyright">Copyright - 2022 | Groupe Socafluid</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="container">
+                        <div class="row">
+                            <p>473 Avenue Edouard Herriot,
+                                <br>
+                                69400 Villefranche-sur-Saône - FRANCE
+                                <br>
+                                Tél. +33 (0)4 74 02 98 98
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#form-tag">
+                                    <div class="contact-footer">Contact</div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://www.linkedin.com/company/bidul&co/?originalSubdomain=fr">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <p><b>Groupe Socafluid</b>, constructeur de <b>solutions industrielles d'automatisation</b> qui répond à des demandes pneumatiques, d'électrovannes et vannes industrielles, et de connectiques industrielles. Cela grâce à ses trois marques, <b>Sopra pneumatic</b>, <b>Setem</b> et <b>Avalco</b>.</p>
+                    <ul>
+                        <li><a href="plan-du-site.html">Plan du site</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="reglementation-rgpd.html">Règlementation RGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/timeline.js"></script>
+    <script src="scripts/everywhere.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/contact.js"></script>
+
+    <!-- Gestion des cookies -->
+
+    <script src="scripts/tarteaucitron/tarteaucitron.js"></script>
+
+        <script type="text/javascript">
+        tarteaucitron.init({
+    	  "privacyUrl": "", /* Privacy policy url */
+          "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
+
+    	  "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+    	  "cookieName": "tarteaucitron", /* Cookie name */
+    
+    	  "orientation": "middle", /* Banner position (top - bottom) */
+       
+          "groupServices": false, /* Group services by category */
+                           
+    	  "showAlertSmall": false, /* Show the small banner on bottom right */
+    	  "cookieslist": false, /* Show the cookie list */
+                           
+          "closePopup": false, /* Show a close X on the banner */
+
+          "showIcon": true, /* Show cookie icon to manage cookies */
+          //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+          "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+    	  "adblocker": false, /* Show a Warning if an adblocker is detected */
+                           
+          "DenyAllCta" : true, /* Show the deny all button */
+          "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+          "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+                           
+    	  "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+    	  "removeCredit": false, /* Remove credit link */
+    	  "moreInfoLink": true, /* Show more info link */
+
+          "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+          "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+
+    	  //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+                          
+          "readmoreLink": "", /* Change the default readmore link */
+
+          "mandatory": true, /* Show a message about mandatory cookies */
+          "mandatoryCta": true /* Show the disabled accept button when mandatory on */
+          
+        });
+        </script>
+        <script type="text/javascript">
+            tarteaucitron.user.googleFonts = 'families';
+            (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
+        </script>
+
 </body>
 </html>
