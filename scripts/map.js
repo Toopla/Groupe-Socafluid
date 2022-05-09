@@ -375,8 +375,10 @@ function onclick_commercial_01() {
 
 function reset_commercial_01() {
     if (Reset_commercial_01 == true) {
-        COM_01.style.backgroundColor = '#FFFFFF';
-        COM_01.style.color = '#5D5D5D';
+        if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
+            COM_01.style.backgroundColor = '#FFFFFF';
+            COM_01.style.color = '#5D5D5D';
+        }
         if (Reset_FR_02 == true) {
             FR_02.style.fill = '#5D5D5D';
         }
@@ -432,8 +434,10 @@ function onclick_commercial_02() {
 
 function reset_commercial_02() {
     if (Reset_commercial_02 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         if (Reset_FR_53 == true) {
             FR_53.style.fill = '#5D5D5D';
         }
@@ -508,8 +512,10 @@ function onclick_commercial_03() {
 
 function reset_commercial_03() {
     if (Reset_commercial_03 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+            COM_03.style.backgroundColor = '#FFFFFF';
+            COM_03.style.color = '#5D5D5D';
+        }
         if (Reset_FR_50 == true) {
             FR_50.style.fill = '#5D5D5D';
         }
@@ -580,8 +586,10 @@ function onclick_commercial_04() {
 
 function reset_commercial_04() {
     if (Reset_commercial_04 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+            COM_04.style.backgroundColor = '#FFFFFF';
+            COM_04.style.color = '#5D5D5D';
+        }
         if (Reset_FR_01 == true) {
             FR_01.style.fill = '#5D5D5D';
         }
@@ -643,8 +651,10 @@ function onclick_commercial_05() {
 
 function reset_commercial_05() {
     if (Reset_commercial_05 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+            COM_05.style.backgroundColor = '#FFFFFF';
+            COM_05.style.color = '#5D5D5D';
+        }
         if (Reset_FR_90 == true) {
             FR_90.style.fill = '#5D5D5D';
         }
@@ -733,8 +743,10 @@ function onclick_commercial_06() {
 
 function reset_commercial_06() {
     if (Reset_commercial_06 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         if (Reset_FR_17 == true) {
             FR_17.style.fill = '#5D5D5D';
         }
@@ -832,8 +844,10 @@ function onclick_commercial_07() {
 
 function reset_commercial_07() {
     if (Reset_commercial_07 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+            COM_07.style.backgroundColor = '#FFFFFF';
+            COM_07.style.color = '#5D5D5D';
+        }
         if (Reset_FR_48 == true) {
             FR_48.style.fill = '#5D5D5D';
         }
@@ -906,8 +920,10 @@ function onclick_commercial_08() {
 
 function reset_commercial_08() {
     if (Reset_commercial_08 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+            COM_08.style.backgroundColor = '#FFFFFF';
+            COM_08.style.color = '#5D5D5D';
+        }
         if (Reset_FR_67 == true) {
             FR_67.style.fill = '#5D5D5D';
         }
@@ -967,8 +983,10 @@ function onclick_commercial_09() {
 
 function reset_commercial_09() {
     if (Reset_commercial_09 == true) {
-        COM_09.style.backgroundColor = '#FFFFFF';
-        COM_09.style.color = '#5D5D5D';
+        if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
+            COM_09.style.backgroundColor = '#FFFFFF';
+            COM_09.style.color = '#5D5D5D';
+        }
         if (Reset_FR_29 == true) {
             FR_29.style.fill = '#5D5D5D';
         }

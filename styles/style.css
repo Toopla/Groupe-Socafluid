@@ -1071,17 +1071,17 @@ figure.snip1477:hover h4 {
   font-size: 20px;
 }
 
-.map div.container div.row div.col-6 {
+.map div.container div.row div.col-4 {
   margin: auto;
 }
 
-.map div.container div.row div.col-6 a {
+.map div.container div.row div.col-4 a {
   font-size: 20px;
   text-decoration: none;
   color: #5D5D5D;
 }
 
-.map div.container div.row div.col-6 a:hover {
+.map div.container div.row div.col-4 a:hover {
   cursor: pointer;
 }
 
