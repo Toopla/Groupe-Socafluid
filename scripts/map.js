@@ -397,7 +397,7 @@ function reset_commercial_01() {
         if (Reset_FR_80 == true) {
             FR_80.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 function commercial_02() {
@@ -471,7 +471,7 @@ function reset_commercial_02() {
         if (Reset_FR_86 == true) {
             FR_86.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 function commercial_03() {
@@ -555,7 +555,7 @@ function reset_commercial_03() {
         if (Reset_FR_94 == true) {
             FR_94.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 function commercial_04() {
@@ -614,7 +614,7 @@ function reset_commercial_04() {
         if (Reset_FR_43 == true) {
             FR_43.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 function commercial_05() {
@@ -688,7 +688,7 @@ function reset_commercial_05() {
         if (Reset_FR_23 == true) {
             FR_23.style.fill = '#5D5D5D';
         }     
-    } else {}
+    }
 };
 
 function commercial_06() {
@@ -807,7 +807,7 @@ function reset_commercial_06() {
         if (Reset_FR_66 == true) {
             FR_66.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 function commercial_07() {
@@ -881,7 +881,7 @@ function reset_commercial_07() {
         if (Reset_FR_2A == true) {
             FR_2A.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 function commercial_08() {
@@ -960,7 +960,7 @@ function reset_commercial_08() {
         if (Reset_FR_89 == true) {
             FR_89.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 function commercial_09() {
@@ -999,7 +999,7 @@ function reset_commercial_09() {
         if (Reset_FR_56 == true) {
             FR_56.style.fill = '#5D5D5D';
         }
-    } else {}
+    }
 };
 
 let Reset_FR_01 = true;
@@ -1112,10 +1112,12 @@ function onclick_FR_62() {
 
 function reset_FR_62() {
     if (Reset_FR_62 == true) {
-        COM_01.style.backgroundColor = '#FFFFFF';
-        COM_01.style.color = '#5D5D5D';
+        if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
+            COM_01.style.backgroundColor = '#FFFFFF';
+            COM_01.style.color = '#5D5D5D';
+        }
         FR_62.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_59() {
@@ -1131,10 +1133,12 @@ function onclick_FR_59() {
 
 function reset_FR_59() {
     if (Reset_FR_59 == true) {
-        COM_01.style.backgroundColor = '#FFFFFF';
-        COM_01.style.color = '#5D5D5D';
+        if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
+            COM_01.style.backgroundColor = '#FFFFFF';
+            COM_01.style.color = '#5D5D5D';
+        }
         FR_59.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_02() {
@@ -1150,10 +1154,12 @@ function onclick_FR_02() {
 
 function reset_FR_02() {
     if (Reset_FR_02 == true) {
-        COM_01.style.backgroundColor = '#FFFFFF';
-        COM_01.style.color = '#5D5D5D';
+        if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
+            COM_01.style.backgroundColor = '#FFFFFF';
+            COM_01.style.color = '#5D5D5D';
+        }
         FR_02.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_60() {
@@ -1169,10 +1175,12 @@ function onclick_FR_60() {
 
 function reset_FR_60() {
     if (Reset_FR_60 == true) {
-        COM_01.style.backgroundColor = '#FFFFFF';
-        COM_01.style.color = '#5D5D5D';
+        if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
+            COM_01.style.backgroundColor = '#FFFFFF';
+            COM_01.style.color = '#5D5D5D';
+        }
         FR_60.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_80() {
@@ -1188,10 +1196,12 @@ function onclick_FR_80() {
 
 function reset_FR_80() {
     if (Reset_FR_80 == true) {
-        COM_01.style.backgroundColor = '#FFFFFF';
-        COM_01.style.color = '#5D5D5D';
+        if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
+            COM_01.style.backgroundColor = '#FFFFFF';
+            COM_01.style.color = '#5D5D5D';
+        }
         FR_80.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_76() {
@@ -1207,10 +1217,12 @@ function onclick_FR_76() {
 
 function reset_FR_76() {
     if (Reset_FR_76 == true) {
-        COM_01.style.backgroundColor = '#FFFFFF';
-        COM_01.style.color = '#5D5D5D';
+        if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
+            COM_01.style.backgroundColor = '#FFFFFF';
+            COM_01.style.color = '#5D5D5D';
+        }
         FR_76.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_53() {
@@ -1226,10 +1238,12 @@ function onclick_FR_53() {
 
 function reset_FR_53() {
     if (Reset_FR_53 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_53.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_44() {
@@ -1245,10 +1259,12 @@ function onclick_FR_44() {
 
 function reset_FR_44() {
     if (Reset_FR_44 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_44.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_85() {
@@ -1264,10 +1280,12 @@ function onclick_FR_85() {
 
 function reset_FR_85() {
     if (Reset_FR_85 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_85.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_79() {
@@ -1283,10 +1301,12 @@ function onclick_FR_79() {
 
 function reset_FR_79() {
     if (Reset_FR_79 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_79.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_49() {
@@ -1302,10 +1322,12 @@ function onclick_FR_49() {
 
 function reset_FR_49() {
     if (Reset_FR_49 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_49.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_72() {
@@ -1321,10 +1343,12 @@ function onclick_FR_72() {
 
 function reset_FR_72() {
     if (Reset_FR_72 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_72.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_41() {
@@ -1340,10 +1364,12 @@ function onclick_FR_41() {
 
 function reset_FR_41() {
     if (Reset_FR_41 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_41.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_37() {
@@ -1359,10 +1385,12 @@ function onclick_FR_37() {
 
 function reset_FR_37() {
     if (Reset_FR_37 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_37.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_86() {
@@ -1378,10 +1406,12 @@ function onclick_FR_86() {
 
 function reset_FR_86() {
     if (Reset_FR_86 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_86.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_18() {
@@ -1397,10 +1427,12 @@ function onclick_FR_18() {
 
 function reset_FR_18() {
     if (Reset_FR_18 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_18.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_36() {
@@ -1416,10 +1448,12 @@ function onclick_FR_36() {
 
 function reset_FR_36() {
     if (Reset_FR_36 == true) {
-        COM_02.style.backgroundColor = '#FFFFFF';
-        COM_02.style.color = '#5D5D5D';
+        if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
+            COM_02.style.backgroundColor = '#FFFFFF';
+            COM_02.style.color = '#5D5D5D';
+        }
         FR_36.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_50() {
@@ -1435,10 +1469,12 @@ function onclick_FR_50() {
 
 function reset_FR_50() {
     if (Reset_FR_50 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_50.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_14() {
@@ -1454,10 +1490,12 @@ function onclick_FR_14() {
 
 function reset_FR_14() {
     if (Reset_FR_14 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_14.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_61() {
@@ -1473,10 +1511,12 @@ function onclick_FR_61() {
 
 function reset_FR_61() {
     if (Reset_FR_61 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_61.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_27() {
@@ -1492,10 +1532,12 @@ function onclick_FR_27() {
 
 function reset_FR_27() {
     if (Reset_FR_27 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_27.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_28() {
@@ -1511,10 +1553,12 @@ function onclick_FR_28() {
 
 function reset_FR_28() {
     if (Reset_FR_28 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_28.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_78() {
@@ -1530,10 +1574,12 @@ function onclick_FR_78() {
 
 function reset_FR_78() {
     if (Reset_FR_78 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_78.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_95() {
@@ -1549,10 +1595,12 @@ function onclick_FR_95() {
 
 function reset_FR_95() {
     if (Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_95.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_91() {
@@ -1568,10 +1616,12 @@ function onclick_FR_91() {
 
 function reset_FR_91() {
     if (Reset_FR_91 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_91.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_45() {
@@ -1587,10 +1637,12 @@ function onclick_FR_45() {
 
 function reset_FR_45() {
     if (Reset_FR_45 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_45.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_92() {
@@ -1606,10 +1658,12 @@ function onclick_FR_92() {
 
 function reset_FR_92() {
     if (Reset_FR_92 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_92.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_75() {
@@ -1625,10 +1679,12 @@ function onclick_FR_75() {
 
 function reset_FR_75() {
     if (Reset_FR_75 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_75.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_93() {
@@ -1644,10 +1700,12 @@ function onclick_FR_93() {
 
 function reset_FR_93() {
     if (Reset_FR_93 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_93.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_94() {
@@ -1663,10 +1721,12 @@ function onclick_FR_94() {
 
 function reset_FR_94() {
     if (Reset_FR_94 == true) {
-        COM_03.style.backgroundColor = '#FFFFFF';
-        COM_03.style.color = '#5D5D5D';
+        if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
+	        COM_03.style.backgroundColor = '#FFFFFF';
+        	COM_03.style.color = '#5D5D5D';
+	}
         FR_94.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_74() {
@@ -1682,10 +1742,12 @@ function onclick_FR_74() {
 
 function reset_FR_74() {
     if (Reset_FR_74 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_74.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_73() {
@@ -1701,10 +1763,12 @@ function onclick_FR_73() {
 
 function reset_FR_73() {
     if (Reset_FR_73 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_73.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_01() {
@@ -1720,10 +1784,12 @@ function onclick_FR_01() {
 
 function reset_FR_01() {
     if (Reset_FR_01 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_01.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_38() {
@@ -1739,10 +1805,12 @@ function onclick_FR_38() {
 
 function reset_FR_38() {
     if (Reset_FR_38 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_38.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_26() {
@@ -1758,10 +1826,12 @@ function onclick_FR_26() {
 
 function reset_FR_26() {
     if (Reset_FR_26 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_26.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_07() {
@@ -1777,10 +1847,12 @@ function onclick_FR_07() {
 
 function reset_FR_07() {
     if (Reset_FR_07 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_07.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_43() {
@@ -1796,10 +1868,12 @@ function onclick_FR_43() {
 
 function reset_FR_43() {
     if (Reset_FR_43 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_43.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_42() {
@@ -1815,10 +1889,12 @@ function onclick_FR_42() {
 
 function reset_FR_42() {
     if (Reset_FR_42 == true) {
-        COM_04.style.backgroundColor = '#FFFFFF';
-        COM_04.style.color = '#5D5D5D';
+        if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
+	        COM_04.style.backgroundColor = '#FFFFFF';
+        	COM_04.style.color = '#5D5D5D';
+	}
         FR_42.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_90() {
@@ -1834,10 +1910,12 @@ function onclick_FR_90() {
 
 function reset_FR_90() {
     if (Reset_FR_90 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_90.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_25() {
@@ -1853,10 +1931,12 @@ function onclick_FR_25() {
 
 function reset_FR_25() {
     if (Reset_FR_25 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_25.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_70() {
@@ -1872,10 +1952,12 @@ function onclick_FR_70() {
 
 function reset_FR_70() {
     if (Reset_FR_70 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_70.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_39() {
@@ -1891,10 +1973,12 @@ function onclick_FR_39() {
 
 function reset_FR_39() {
     if (Reset_FR_39 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_39.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_21() {
@@ -1910,10 +1994,12 @@ function onclick_FR_21() {
 
 function reset_FR_21() {
     if (Reset_FR_21 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_21.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_71() {
@@ -1929,10 +2015,12 @@ function onclick_FR_71() {
 
 function reset_FR_71() {
     if (Reset_FR_71 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_71.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_69() {
@@ -1948,10 +2036,12 @@ function onclick_FR_69() {
 
 function reset_FR_69() {
     if (Reset_FR_69 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_69.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_58() {
@@ -1967,10 +2057,12 @@ function onclick_FR_58() {
 
 function reset_FR_58() {
     if (Reset_FR_58 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_58.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_03() {
@@ -1986,10 +2078,12 @@ function onclick_FR_03() {
 
 function reset_FR_03() {
     if (Reset_FR_03 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_03.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_63() {
@@ -2005,10 +2099,12 @@ function onclick_FR_63() {
 
 function reset_FR_63() {
     if (Reset_FR_63 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_63.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_23() {
@@ -2024,10 +2120,12 @@ function onclick_FR_23() {
 
 function reset_FR_23() {
     if (Reset_FR_23 == true) {
-        COM_05.style.backgroundColor = '#FFFFFF';
-        COM_05.style.color = '#5D5D5D';
+        if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
+        	COM_05.style.backgroundColor = '#FFFFFF';
+        	COM_05.style.color = '#5D5D5D';
+	}
         FR_23.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_17() {
@@ -2043,10 +2141,12 @@ function onclick_FR_17() {
 
 function reset_FR_17() {
     if (Reset_FR_17 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_17.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_16() {
@@ -2062,10 +2162,12 @@ function onclick_FR_16() {
 
 function reset_FR_16() {
     if (Reset_FR_16 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_16.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_87() {
@@ -2081,10 +2183,12 @@ function onclick_FR_87() {
 
 function reset_FR_87() {
     if (Reset_FR_87 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_87.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_19() {
@@ -2100,10 +2204,12 @@ function onclick_FR_19() {
 
 function reset_FR_19() {
     if (Reset_FR_19 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_19.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_15() {
@@ -2119,10 +2225,12 @@ function onclick_FR_15() {
 
 function reset_FR_15() {
     if (Reset_FR_15 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_15.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_24() {
@@ -2138,10 +2246,12 @@ function onclick_FR_24() {
 
 function reset_FR_24() {
     if (Reset_FR_24 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_24.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_46() {
@@ -2157,10 +2267,12 @@ function onclick_FR_46() {
 
 function reset_FR_46() {
     if (Reset_FR_46 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_46.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_15() {
@@ -2176,10 +2288,12 @@ function onclick_FR_15() {
 
 function reset_FR_15() {
     if (Reset_FR_15 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_15.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_12() {
@@ -2195,10 +2309,12 @@ function onclick_FR_12() {
 
 function reset_FR_12() {
     if (Reset_FR_12 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_12.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_81() {
@@ -2214,10 +2330,12 @@ function onclick_FR_81() {
 
 function reset_FR_81() {
     if (Reset_FR_81 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_81.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_82() {
@@ -2233,10 +2351,12 @@ function onclick_FR_82() {
 
 function reset_FR_82() {
     if (Reset_FR_82 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_82.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_47() {
@@ -2252,10 +2372,12 @@ function onclick_FR_47() {
 
 function reset_FR_47() {
     if (Reset_FR_47 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_47.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_33() {
@@ -2271,10 +2393,12 @@ function onclick_FR_33() {
 
 function reset_FR_33() {
     if (Reset_FR_33 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_33.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_11() {
@@ -2290,10 +2414,12 @@ function onclick_FR_11() {
 
 function reset_FR_11() {
     if (Reset_FR_11 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_11.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_31() {
@@ -2309,10 +2435,12 @@ function onclick_FR_31() {
 
 function reset_FR_31() {
     if (Reset_FR_31 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_31.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_32() {
@@ -2328,10 +2456,12 @@ function onclick_FR_32() {
 
 function reset_FR_32() {
     if (Reset_FR_32 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_32.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_40() {
@@ -2347,10 +2477,12 @@ function onclick_FR_40() {
 
 function reset_FR_40() {
     if (Reset_FR_40 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_40.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_66() {
@@ -2366,10 +2498,12 @@ function onclick_FR_66() {
 
 function reset_FR_66() {
     if (Reset_FR_66 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_66.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_09() {
@@ -2385,10 +2519,12 @@ function onclick_FR_09() {
 
 function reset_FR_09() {
     if (Reset_FR_09 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_09.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_65() {
@@ -2404,10 +2540,12 @@ function onclick_FR_65() {
 
 function reset_FR_65() {
     if (Reset_FR_65 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_65.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_64() {
@@ -2423,10 +2561,12 @@ function onclick_FR_64() {
 
 function reset_FR_64() {
     if (Reset_FR_64 == true) {
-        COM_06.style.backgroundColor = '#FFFFFF';
-        COM_06.style.color = '#5D5D5D';
+        if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
+            COM_06.style.backgroundColor = '#FFFFFF';
+            COM_06.style.color = '#5D5D5D';
+        }
         FR_64.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_2A() {
@@ -2442,10 +2582,12 @@ function onclick_FR_2A() {
 
 function reset_FR_2A() {
     if (Reset_FR_2A == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_2A.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_2B() {
@@ -2461,10 +2603,12 @@ function onclick_FR_2B() {
 
 function reset_FR_2B() {
     if (Reset_FR_2B == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_2B.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_06() {
@@ -2480,10 +2624,12 @@ function onclick_FR_06() {
 
 function reset_FR_06() {
     if (Reset_FR_06 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_06.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_05() {
@@ -2499,10 +2645,12 @@ function onclick_FR_05() {
 
 function reset_FR_05() {
     if (Reset_FR_05 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_05.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_04() {
@@ -2518,10 +2666,12 @@ function onclick_FR_04() {
 
 function reset_FR_04() {
     if (Reset_FR_04 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_04.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_83() {
@@ -2537,10 +2687,12 @@ function onclick_FR_83() {
 
 function reset_FR_83() {
     if (Reset_FR_83 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_83.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_84() {
@@ -2556,10 +2708,12 @@ function onclick_FR_84() {
 
 function reset_FR_84() {
     if (Reset_FR_84 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_84.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_13() {
@@ -2575,10 +2729,12 @@ function onclick_FR_13() {
 
 function reset_FR_13() {
     if (Reset_FR_13 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_13.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_30() {
@@ -2594,10 +2750,12 @@ function onclick_FR_30() {
 
 function reset_FR_30() {
     if (Reset_FR_30 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_30.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_34() {
@@ -2613,10 +2771,12 @@ function onclick_FR_34() {
 
 function reset_FR_34() {
     if (Reset_FR_34 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_34.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_48() {
@@ -2632,10 +2792,12 @@ function onclick_FR_48() {
 
 function reset_FR_48() {
     if (Reset_FR_48 == true) {
-        COM_07.style.backgroundColor = '#FFFFFF';
-        COM_07.style.color = '#5D5D5D';
+        if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
+        	COM_07.style.backgroundColor = '#FFFFFF';
+        	COM_07.style.color = '#5D5D5D';
+	}
         FR_48.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_77() {
@@ -2651,10 +2813,12 @@ function onclick_FR_77() {
 
 function reset_FR_77() {
     if (Reset_FR_77 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_77.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_89() {
@@ -2670,10 +2834,12 @@ function onclick_FR_89() {
 
 function reset_FR_89() {
     if (Reset_FR_89 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_89.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_10() {
@@ -2689,10 +2855,12 @@ function onclick_FR_10() {
 
 function reset_FR_10() {
     if (Reset_FR_10 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_10.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_51() {
@@ -2708,10 +2876,12 @@ function onclick_FR_51() {
 
 function reset_FR_51() {
     if (Reset_FR_51 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_51.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_08() {
@@ -2727,10 +2897,12 @@ function onclick_FR_08() {
 
 function reset_FR_08() {
     if (Reset_FR_08 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_08.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_55() {
@@ -2746,10 +2918,12 @@ function onclick_FR_55() {
 
 function reset_FR_55() {
     if (Reset_FR_55 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_55.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_52() {
@@ -2765,10 +2939,12 @@ function onclick_FR_52() {
 
 function reset_FR_52() {
     if (Reset_FR_52 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_52.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_88() {
@@ -2784,10 +2960,12 @@ function onclick_FR_88() {
 
 function reset_FR_88() {
     if (Reset_FR_88 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_88.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_54() {
@@ -2803,10 +2981,12 @@ function onclick_FR_54() {
 
 function reset_FR_54() {
     if (Reset_FR_54 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_54.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_57() {
@@ -2822,10 +3002,12 @@ function onclick_FR_57() {
 
 function reset_FR_57() {
     if (Reset_FR_57 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_57.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_67() {
@@ -2841,10 +3023,12 @@ function onclick_FR_67() {
 
 function reset_FR_67() {
     if (Reset_FR_67 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_67.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_68() {
@@ -2860,10 +3044,12 @@ function onclick_FR_68() {
 
 function reset_FR_68() {
     if (Reset_FR_68 == true) {
-        COM_08.style.backgroundColor = '#FFFFFF';
-        COM_08.style.color = '#5D5D5D';
+        if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
+        	COM_08.style.backgroundColor = '#FFFFFF';
+        	COM_08.style.color = '#5D5D5D';
+	}
         FR_68.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_29() {
@@ -2879,10 +3065,12 @@ function onclick_FR_29() {
 
 function reset_FR_29() {
     if (Reset_FR_29 == true) {
-        COM_09.style.backgroundColor = '#FFFFFF';
-        COM_09.style.color = '#5D5D5D';
+        if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
+        	COM_09.style.backgroundColor = '#FFFFFF';
+        	COM_09.style.color = '#5D5D5D';
+	}
         FR_29.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_22() {
@@ -2898,10 +3086,12 @@ function onclick_FR_22() {
 
 function reset_FR_22() {
     if (Reset_FR_22 == true) {
-        COM_09.style.backgroundColor = '#FFFFFF';
-        COM_09.style.color = '#5D5D5D';
+        if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
+        	COM_09.style.backgroundColor = '#FFFFFF';
+        	COM_09.style.color = '#5D5D5D';
+	}
         FR_22.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_56() {
@@ -2917,10 +3107,12 @@ function onclick_FR_56() {
 
 function reset_FR_56() {
     if (Reset_FR_56 == true) {
-        COM_09.style.backgroundColor = '#FFFFFF';
-        COM_09.style.color = '#5D5D5D';
+        if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
+        	COM_09.style.backgroundColor = '#FFFFFF';
+        	COM_09.style.color = '#5D5D5D';
+	}
         FR_56.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
 
 function over_FR_35() {
@@ -2936,8 +3128,10 @@ function onclick_FR_35() {
 
 function reset_FR_35() {
     if (Reset_FR_35 == true) {
-        COM_09.style.backgroundColor = '#FFFFFF';
-        COM_09.style.color = '#5D5D5D';
+        if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
+        	COM_09.style.backgroundColor = '#FFFFFF';
+        	COM_09.style.color = '#5D5D5D';
+	}
         FR_35.style.fill = '#5D5D5D';
-    } else {}
+    }
 };
