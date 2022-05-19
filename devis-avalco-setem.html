@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de devis</title>
+    <link rel="icon" type="images/png" href="images/Groupe-Socafluid.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ce6f2cf725.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <!-- Navbar -->
+        <nav class="nav">
+            <div class="container-fluid">
+                <a href="index.html"><img src="images/socafluid_logo.png"></a>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">Groupe Socafluid</a></li>
+                        <li><a href="https://sopra-pneumatic.com/">Sopra</a></li>
+                        <li><a href="https://setem-electrovanne.fr/">Setem</a></li>
+                        <li><a href="https://www.avalco.fr/">Avalco</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    
+        <div class="nav-tag" id="nav-tag"></div>
+    
+        <!-- Form -->
+        <section class="form">
+            <div class="form-tag" id="form-tag"></div>
+            <div class="container text-center">
+                <div class="row">
+                    <h1>FORMULAIRE DE CONTACT</h1>
+                </div>
+            </div>
+            <form method="post" action="scripts/contact_devis_avalco_setem.php">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-6"><input name="nom" type="text" class="feedback-input" placeholder="Nom" required/></div>
+                        <div class="col-6"><input name="prenom" type="text" class="feedback-input" placeholder="Prénom" required/></div>
+                        <div class="col-6"><input name="societe" type="text" class="feedback-input" placeholder="Société"/></div>
+                        <div class="col-6"><input name="telephone" type="text" class="feedback-input" placeholder="Téléphone" required/></div>
+                        <div class="col-12"><input name="email" type="text" class="feedback-input" placeholder="Adresse e-mail" required/></div>
+                        <div class="col-12"><textarea name="message" class="feedback-input" placeholder="Message" required></textarea></div>
+                        <div class="col-12"><input name="envoyer" type="submit" value="Envoyer"/></div>
+                    </div>
+                </div>
+              </form>
+        </section>
+    
+        <!-- RGPD -->
+        <section class="rgpd">
+            <div class="container">
+                <div class="row">
+                    <p>
+                        Les données que vous renseignez dans ce formulaire sont traitées par le groupe Socafluid en qualité de responsable de traitement. L'ensemble de ces données est obligatoire si vous souhaitez être mis en relation avec le groupe Socafluid et/ou recevoir des informations et des offres commerciales de sa part. Vos données sont utilisées à des fins de gestion de votre relation commerciale, de prospection et/ou de mesure de l'audience de ce site. Vous disposez d'un droit d'accès, de rectification, d'effacement de ces données, d'un droit de limitation du traitement, d'un droit d'opposition, du droit à la portabilité de vos données et du droit d'introduite une réclamation auprès d'une autorité de contrôle (en France, la CNIL).
+                        <br><br>
+                        Pour en savoir plus sur la RGPD sur notre site, voir la <a href="reglementation-rgpd.html">réglementation RGPD</a>.
+                        <br><br>
+                        Pour prendre contact avec nous sur ce sujet, veuillez renseigner ce formulaire ci-dessus en précisant votre demande.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/timeline.js"></script>
+    <script src="scripts/everywhere.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/contact.js"></script>
+
+    <!-- Gestion des cookies -->
+
+    <script src="scripts/tarteaucitron/tarteaucitron.js"></script>
+
+        <script type="text/javascript">
+        tarteaucitron.init({
+    	  "privacyUrl": "", /* Privacy policy url */
+          "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
+
+    	  "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+    	  "cookieName": "tarteaucitron", /* Cookie name */
+    
+    	  "orientation": "middle", /* Banner position (top - bottom) */
+       
+          "groupServices": false, /* Group services by category */
+                           
+    	  "showAlertSmall": false, /* Show the small banner on bottom right */
+    	  "cookieslist": false, /* Show the cookie list */
+                           
+          "closePopup": false, /* Show a close X on the banner */
+
+          "showIcon": true, /* Show cookie icon to manage cookies */
+          //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+          "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+    	  "adblocker": false, /* Show a Warning if an adblocker is detected */
+                           
+          "DenyAllCta" : true, /* Show the deny all button */
+          "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+          "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+                           
+    	  "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+    	  "removeCredit": false, /* Remove credit link */
+    	  "moreInfoLink": true, /* Show more info link */
+
+          "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+          "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+
+    	  //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+                          
+          "readmoreLink": "", /* Change the default readmore link */
+
+          "mandatory": true, /* Show a message about mandatory cookies */
+          "mandatoryCta": true /* Show the disabled accept button when mandatory on */
+          
+        });
+        </script>
+</body>
+</html>

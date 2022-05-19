@@ -1,14 +1,10 @@
-const RESET = document.getElementById('RESET');
-
-let map_color = '#3b95dc';
-let com_color = '#FFFFFF';
-let text_com_color = '#5D5D5D';
-let map_over_color = '#FFFFFF';
-let com_over_color = '#FFFFFF';
-let text_com_over_color = '#5D5D5D';
 let transition = 'all 0.5s';
 let opacity_0 = '0';
 let opacity_1 = '1';
+let fill_opacity_0 = '0';
+let fill_opacity_1 = '1';
+
+const RESET = document.getElementById('RESET');
 
 const COM_01 = document.getElementById('COM-01');
 const COM_02 = document.getElementById('COM-02');
@@ -127,130 +123,319 @@ let Reset_commercial_07 = true;
 let Reset_commercial_08 = true;
 let Reset_commercial_09 = true;
 
+let Reset_FR_01 = true;
+let Reset_FR_02 = true;
+let Reset_FR_03 = true;
+let Reset_FR_04 = true;
+let Reset_FR_05 = true;
+let Reset_FR_06 = true;
+let Reset_FR_07 = true;
+let Reset_FR_08 = true;
+let Reset_FR_09 = true;
+let Reset_FR_10 = true;
+let Reset_FR_11 = true;
+let Reset_FR_12 = true;
+let Reset_FR_13 = true;
+let Reset_FR_14 = true;
+let Reset_FR_15 = true;
+let Reset_FR_16 = true;
+let Reset_FR_17 = true;
+let Reset_FR_18 = true;
+let Reset_FR_19 = true;
+let Reset_FR_2A = true;
+let Reset_FR_2B = true;
+let Reset_FR_21 = true;
+let Reset_FR_22 = true;
+let Reset_FR_23 = true;
+let Reset_FR_24 = true;
+let Reset_FR_25 = true;
+let Reset_FR_26 = true;
+let Reset_FR_27 = true;
+let Reset_FR_28 = true;
+let Reset_FR_29 = true;
+let Reset_FR_30 = true;
+let Reset_FR_31 = true;
+let Reset_FR_32 = true;
+let Reset_FR_33 = true;
+let Reset_FR_34 = true;
+let Reset_FR_35 = true;
+let Reset_FR_36 = true;
+let Reset_FR_37 = true;
+let Reset_FR_38 = true;
+let Reset_FR_39 = true;
+let Reset_FR_40 = true;
+let Reset_FR_41 = true;
+let Reset_FR_42 = true;
+let Reset_FR_43 = true;
+let Reset_FR_44 = true;
+let Reset_FR_45 = true;
+let Reset_FR_46 = true;
+let Reset_FR_47 = true;
+let Reset_FR_48 = true;
+let Reset_FR_49 = true;
+let Reset_FR_50 = true;
+let Reset_FR_51 = true;
+let Reset_FR_52 = true;
+let Reset_FR_53 = true;
+let Reset_FR_54 = true;
+let Reset_FR_55 = true;
+let Reset_FR_56 = true;
+let Reset_FR_57 = true;
+let Reset_FR_58 = true;
+let Reset_FR_59 = true;
+let Reset_FR_60 = true;
+let Reset_FR_61 = true;
+let Reset_FR_62 = true;
+let Reset_FR_63 = true;
+let Reset_FR_64 = true;
+let Reset_FR_65 = true;
+let Reset_FR_66 = true;
+let Reset_FR_67 = true;
+let Reset_FR_68 = true;
+let Reset_FR_69 = true;
+let Reset_FR_70 = true;
+let Reset_FR_71 = true;
+let Reset_FR_72 = true;
+let Reset_FR_73 = true;
+let Reset_FR_74 = true;
+let Reset_FR_75 = true;
+let Reset_FR_76 = true;
+let Reset_FR_77 = true;
+let Reset_FR_78 = true;
+let Reset_FR_79 = true;
+let Reset_FR_80 = true;
+let Reset_FR_81 = true;
+let Reset_FR_82 = true;
+let Reset_FR_83 = true;
+let Reset_FR_84 = true;
+let Reset_FR_85 = true;
+let Reset_FR_86 = true;
+let Reset_FR_87 = true;
+let Reset_FR_88 = true;
+let Reset_FR_89 = true;
+let Reset_FR_90 = true;
+let Reset_FR_91 = true;
+let Reset_FR_92 = true;
+let Reset_FR_93 = true;
+let Reset_FR_94 = true;
+let Reset_FR_95 = true;
+
+function start_map() {
+    COM_01.style.transition = transition;
+    COM_02.style.transition = transition;
+    COM_03.style.transition = transition;
+    COM_04.style.transition = transition;
+    COM_05.style.transition = transition;
+    COM_06.style.transition = transition;
+    COM_07.style.transition = transition;
+    COM_08.style.transition = transition;
+    COM_09.style.transition = transition;
+    FR_01.style.transition = transition;
+    FR_02.style.transition = transition;
+    FR_03.style.transition = transition;
+    FR_04.style.transition = transition;
+    FR_05.style.transition = transition;
+    FR_06.style.transition = transition;
+    FR_07.style.transition = transition;
+    FR_08.style.transition = transition;
+    FR_09.style.transition = transition;
+    FR_10.style.transition = transition;
+    FR_11.style.transition = transition;
+    FR_12.style.transition = transition;
+    FR_13.style.transition = transition;
+    FR_14.style.transition = transition;
+    FR_15.style.transition = transition;
+    FR_16.style.transition = transition;
+    FR_17.style.transition = transition;
+    FR_18.style.transition = transition;
+    FR_19.style.transition = transition;
+    FR_2A.style.transition = transition;
+    FR_2B.style.transition = transition;
+    FR_21.style.transition = transition;
+    FR_22.style.transition = transition;
+    FR_23.style.transition = transition;
+    FR_24.style.transition = transition;
+    FR_25.style.transition = transition;
+    FR_26.style.transition = transition;
+    FR_27.style.transition = transition;
+    FR_28.style.transition = transition;
+    FR_29.style.transition = transition;
+    FR_30.style.transition = transition;
+    FR_31.style.transition = transition;
+    FR_32.style.transition = transition;
+    FR_33.style.transition = transition;
+    FR_34.style.transition = transition;
+    FR_35.style.transition = transition;
+    FR_36.style.transition = transition;
+    FR_37.style.transition = transition;
+    FR_38.style.transition = transition;
+    FR_39.style.transition = transition;
+    FR_40.style.transition = transition;
+    FR_41.style.transition = transition;
+    FR_42.style.transition = transition;
+    FR_43.style.transition = transition;
+    FR_44.style.transition = transition;
+    FR_45.style.transition = transition;
+    FR_46.style.transition = transition;
+    FR_47.style.transition = transition;
+    FR_48.style.transition = transition;
+    FR_49.style.transition = transition;
+    FR_50.style.transition = transition;
+    FR_51.style.transition = transition;
+    FR_52.style.transition = transition;
+    FR_53.style.transition = transition;
+    FR_54.style.transition = transition;
+    FR_55.style.transition = transition;
+    FR_56.style.transition = transition;
+    FR_57.style.transition = transition;
+    FR_58.style.transition = transition;
+    FR_59.style.transition = transition;
+    FR_60.style.transition = transition;
+    FR_61.style.transition = transition;
+    FR_62.style.transition = transition;
+    FR_63.style.transition = transition;
+    FR_64.style.transition = transition;
+    FR_65.style.transition = transition;
+    FR_66.style.transition = transition;
+    FR_67.style.transition = transition;
+    FR_68.style.transition = transition;
+    FR_69.style.transition = transition;
+    FR_70.style.transition = transition;
+    FR_71.style.transition = transition;
+    FR_72.style.transition = transition;
+    FR_73.style.transition = transition;
+    FR_74.style.transition = transition;
+    FR_75.style.transition = transition;
+    FR_76.style.transition = transition;
+    FR_77.style.transition = transition;
+    FR_78.style.transition = transition;
+    FR_79.style.transition = transition;
+    FR_80.style.transition = transition;
+    FR_81.style.transition = transition;
+    FR_82.style.transition = transition;
+    FR_83.style.transition = transition;
+    FR_84.style.transition = transition;
+    FR_85.style.transition = transition;
+    FR_86.style.transition = transition;
+    FR_87.style.transition = transition;
+    FR_88.style.transition = transition;
+    FR_89.style.transition = transition;
+    FR_90.style.transition = transition;
+    FR_91.style.transition = transition;
+    FR_92.style.transition = transition;
+    FR_93.style.transition = transition;
+    FR_94.style.transition = transition;
+    FR_95.style.transition = transition;
+};
+
+start_map();
+
 function reset_all() {
-    COM_01.style.backgroundColor = com_color;
-    COM_01.style.color = text_com_color;
     COM_01.style.opacity = opacity_0;
-    COM_02.style.backgroundColor = com_color;
-    COM_02.style.color = text_com_color;
     COM_02.style.opacity = opacity_0;
-    COM_03.style.backgroundColor = com_color;
-    COM_03.style.color = text_com_color;
     COM_03.style.opacity = opacity_0;
-    COM_04.style.backgroundColor = com_color;
-    COM_04.style.color = text_com_color;
     COM_04.style.opacity = opacity_0;
-    COM_05.style.backgroundColor = com_color;
-    COM_05.style.color = text_com_color;
     COM_05.style.opacity = opacity_0;
-    COM_06.style.backgroundColor = com_color;
-    COM_06.style.color = text_com_color;
     COM_06.style.opacity = opacity_0;
-    COM_07.style.backgroundColor = com_color;
-    COM_07.style.color = text_com_color;
     COM_07.style.opacity = opacity_0;
-    COM_08.style.backgroundColor = com_color;
-    COM_08.style.color = text_com_color;
     COM_08.style.opacity = opacity_0;
-    COM_09.style.backgroundColor = com_color;
-    COM_09.style.color = text_com_color;
     COM_09.style.opacity = opacity_0;
-    FR_01.style.fill = map_color;
-    FR_02.style.fill = map_color;
-    FR_03.style.fill = map_color;
-    FR_04.style.fill = map_color;
-    FR_05.style.fill = map_color;
-    FR_06.style.fill = map_color;
-    FR_07.style.fill = map_color;
-    FR_08.style.fill = map_color;
-    FR_09.style.fill = map_color;
-    FR_10.style.fill = map_color;
-    FR_11.style.fill = map_color;
-    FR_12.style.fill = map_color;
-    FR_13.style.fill = map_color;
-    FR_14.style.fill = map_color;
-    FR_15.style.fill = map_color;
-    FR_16.style.fill = map_color;
-    FR_17.style.fill = map_color;
-    FR_18.style.fill = map_color;
-    FR_19.style.fill = map_color;
-    FR_2A.style.fill = map_color;
-    FR_2B.style.fill = map_color;
-    FR_21.style.fill = map_color;
-    FR_22.style.fill = map_color;
-    FR_23.style.fill = map_color;
-    FR_24.style.fill = map_color;
-    FR_25.style.fill = map_color;
-    FR_26.style.fill = map_color;
-    FR_27.style.fill = map_color;
-    FR_28.style.fill = map_color;
-    FR_29.style.fill = map_color;
-    FR_30.style.fill = map_color;
-    FR_31.style.fill = map_color;
-    FR_32.style.fill = map_color;
-    FR_33.style.fill = map_color;
-    FR_34.style.fill = map_color;
-    FR_35.style.fill = map_color;
-    FR_36.style.fill = map_color;
-    FR_37.style.fill = map_color;
-    FR_38.style.fill = map_color;
-    FR_39.style.fill = map_color;
-    FR_40.style.fill = map_color;
-    FR_41.style.fill = map_color;
-    FR_42.style.fill = map_color;
-    FR_43.style.fill = map_color;
-    FR_44.style.fill = map_color;
-    FR_45.style.fill = map_color;
-    FR_46.style.fill = map_color;
-    FR_47.style.fill = map_color;
-    FR_48.style.fill = map_color;
-    FR_49.style.fill = map_color;
-    FR_50.style.fill = map_color;
-    FR_51.style.fill = map_color;
-    FR_52.style.fill = map_color;
-    FR_53.style.fill = map_color;
-    FR_54.style.fill = map_color;
-    FR_55.style.fill = map_color;
-    FR_56.style.fill = map_color;
-    FR_57.style.fill = map_color;
-    FR_58.style.fill = map_color;
-    FR_59.style.fill = map_color;
-    FR_60.style.fill = map_color;
-    FR_61.style.fill = map_color;
-    FR_62.style.fill = map_color;
-    FR_63.style.fill = map_color;
-    FR_64.style.fill = map_color;
-    FR_65.style.fill = map_color;
-    FR_66.style.fill = map_color;
-    FR_67.style.fill = map_color;
-    FR_68.style.fill = map_color;
-    FR_69.style.fill = map_color;
-    FR_70.style.fill = map_color;
-    FR_71.style.fill = map_color;
-    FR_72.style.fill = map_color;
-    FR_73.style.fill = map_color;
-    FR_74.style.fill = map_color;
-    FR_75.style.fill = map_color;
-    FR_76.style.fill = map_color;
-    FR_77.style.fill = map_color;
-    FR_78.style.fill = map_color;
-    FR_79.style.fill = map_color;
-    FR_80.style.fill = map_color;
-    FR_81.style.fill = map_color;
-    FR_82.style.fill = map_color;
-    FR_83.style.fill = map_color;
-    FR_84.style.fill = map_color;
-    FR_85.style.fill = map_color;
-    FR_86.style.fill = map_color;
-    FR_87.style.fill = map_color;
-    FR_88.style.fill = map_color;
-    FR_89.style.fill = map_color;
-    FR_90.style.fill = map_color;
-    FR_91.style.fill = map_color;
-    FR_92.style.fill = map_color;
-    FR_93.style.fill = map_color;
-    FR_94.style.fill = map_color;
-    FR_95.style.fill = map_color;
+    FR_01.style.fillOpacity = fill_opacity_0;
+    FR_02.style.fillOpacity = fill_opacity_0;
+    FR_03.style.fillOpacity = fill_opacity_0;
+    FR_04.style.fillOpacity = fill_opacity_0;
+    FR_05.style.fillOpacity = fill_opacity_0;
+    FR_06.style.fillOpacity = fill_opacity_0;
+    FR_07.style.fillOpacity = fill_opacity_0;
+    FR_08.style.fillOpacity = fill_opacity_0;
+    FR_09.style.fillOpacity = fill_opacity_0;
+    FR_10.style.fillOpacity = fill_opacity_0;
+    FR_11.style.fillOpacity = fill_opacity_0;
+    FR_12.style.fillOpacity = fill_opacity_0;
+    FR_13.style.fillOpacity = fill_opacity_0;
+    FR_14.style.fillOpacity = fill_opacity_0;
+    FR_15.style.fillOpacity = fill_opacity_0;
+    FR_16.style.fillOpacity = fill_opacity_0;
+    FR_17.style.fillOpacity = fill_opacity_0;
+    FR_18.style.fillOpacity = fill_opacity_0;
+    FR_19.style.fillOpacity = fill_opacity_0;
+    FR_2A.style.fillOpacity = fill_opacity_0;
+    FR_2B.style.fillOpacity = fill_opacity_0;
+    FR_21.style.fillOpacity = fill_opacity_0;
+    FR_22.style.fillOpacity = fill_opacity_0;
+    FR_23.style.fillOpacity = fill_opacity_0;
+    FR_24.style.fillOpacity = fill_opacity_0;
+    FR_25.style.fillOpacity = fill_opacity_0;
+    FR_26.style.fillOpacity = fill_opacity_0;
+    FR_27.style.fillOpacity = fill_opacity_0;
+    FR_28.style.fillOpacity = fill_opacity_0;
+    FR_29.style.fillOpacity = fill_opacity_0;
+    FR_30.style.fillOpacity = fill_opacity_0;
+    FR_31.style.fillOpacity = fill_opacity_0;
+    FR_32.style.fillOpacity = fill_opacity_0;
+    FR_33.style.fillOpacity = fill_opacity_0;
+    FR_34.style.fillOpacity = fill_opacity_0;
+    FR_35.style.fillOpacity = fill_opacity_0;
+    FR_36.style.fillOpacity = fill_opacity_0;
+    FR_37.style.fillOpacity = fill_opacity_0;
+    FR_38.style.fillOpacity = fill_opacity_0;
+    FR_39.style.fillOpacity = fill_opacity_0;
+    FR_40.style.fillOpacity = fill_opacity_0;
+    FR_41.style.fillOpacity = fill_opacity_0;
+    FR_42.style.fillOpacity = fill_opacity_0;
+    FR_43.style.fillOpacity = fill_opacity_0;
+    FR_44.style.fillOpacity = fill_opacity_0;
+    FR_45.style.fillOpacity = fill_opacity_0;
+    FR_46.style.fillOpacity = fill_opacity_0;
+    FR_47.style.fillOpacity = fill_opacity_0;
+    FR_48.style.fillOpacity = fill_opacity_0;
+    FR_49.style.fillOpacity = fill_opacity_0;
+    FR_50.style.fillOpacity = fill_opacity_0;
+    FR_51.style.fillOpacity = fill_opacity_0;
+    FR_52.style.fillOpacity = fill_opacity_0;
+    FR_53.style.fillOpacity = fill_opacity_0;
+    FR_54.style.fillOpacity = fill_opacity_0;
+    FR_55.style.fillOpacity = fill_opacity_0;
+    FR_56.style.fillOpacity = fill_opacity_0;
+    FR_57.style.fillOpacity = fill_opacity_0;
+    FR_58.style.fillOpacity = fill_opacity_0;
+    FR_59.style.fillOpacity = fill_opacity_0;
+    FR_60.style.fillOpacity = fill_opacity_0;
+    FR_61.style.fillOpacity = fill_opacity_0;
+    FR_62.style.fillOpacity = fill_opacity_0;
+    FR_63.style.fillOpacity = fill_opacity_0;
+    FR_64.style.fillOpacity = fill_opacity_0;
+    FR_65.style.fillOpacity = fill_opacity_0;
+    FR_66.style.fillOpacity = fill_opacity_0;
+    FR_67.style.fillOpacity = fill_opacity_0;
+    FR_68.style.fillOpacity = fill_opacity_0;
+    FR_69.style.fillOpacity = fill_opacity_0;
+    FR_70.style.fillOpacity = fill_opacity_0;
+    FR_71.style.fillOpacity = fill_opacity_0;
+    FR_72.style.fillOpacity = fill_opacity_0;
+    FR_73.style.fillOpacity = fill_opacity_0;
+    FR_74.style.fillOpacity = fill_opacity_0;
+    FR_75.style.fillOpacity = fill_opacity_0;
+    FR_76.style.fillOpacity = fill_opacity_0;
+    FR_77.style.fillOpacity = fill_opacity_0;
+    FR_78.style.fillOpacity = fill_opacity_0;
+    FR_79.style.fillOpacity = fill_opacity_0;
+    FR_80.style.fillOpacity = fill_opacity_0;
+    FR_81.style.fillOpacity = fill_opacity_0;
+    FR_82.style.fillOpacity = fill_opacity_0;
+    FR_83.style.fillOpacity = fill_opacity_0;
+    FR_84.style.fillOpacity = fill_opacity_0;
+    FR_85.style.fillOpacity = fill_opacity_0;
+    FR_86.style.fillOpacity = fill_opacity_0;
+    FR_87.style.fillOpacity = fill_opacity_0;
+    FR_88.style.fillOpacity = fill_opacity_0;
+    FR_89.style.fillOpacity = fill_opacity_0;
+    FR_90.style.fillOpacity = fill_opacity_0;
+    FR_91.style.fillOpacity = fill_opacity_0;
+    FR_92.style.fillOpacity = fill_opacity_0;
+    FR_93.style.fillOpacity = fill_opacity_0;
+    FR_94.style.fillOpacity = fill_opacity_0;
+    FR_95.style.fillOpacity = fill_opacity_0;
 };
 
 function onclick_reset_all() {
@@ -362,112 +547,11 @@ function onclick_reset_all() {
     reset_all();
 };
 
-let Reset_FR_01 = true;
-let Reset_FR_02 = true;
-let Reset_FR_03 = true;
-let Reset_FR_04 = true;
-let Reset_FR_05 = true;
-let Reset_FR_06 = true;
-let Reset_FR_07 = true;
-let Reset_FR_08 = true;
-let Reset_FR_09 = true;
-let Reset_FR_10 = true;
-let Reset_FR_11 = true;
-let Reset_FR_12 = true;
-let Reset_FR_13 = true;
-let Reset_FR_14 = true;
-let Reset_FR_15 = true;
-let Reset_FR_16 = true;
-let Reset_FR_17 = true;
-let Reset_FR_18 = true;
-let Reset_FR_19 = true;
-let Reset_FR_2A = true;
-let Reset_FR_2B = true;
-let Reset_FR_21 = true;
-let Reset_FR_22 = true;
-let Reset_FR_23 = true;
-let Reset_FR_24 = true;
-let Reset_FR_25 = true;
-let Reset_FR_26 = true;
-let Reset_FR_27 = true;
-let Reset_FR_28 = true;
-let Reset_FR_29 = true;
-let Reset_FR_30 = true;
-let Reset_FR_31 = true;
-let Reset_FR_32 = true;
-let Reset_FR_33 = true;
-let Reset_FR_34 = true;
-let Reset_FR_35 = true;
-let Reset_FR_36 = true;
-let Reset_FR_37 = true;
-let Reset_FR_38 = true;
-let Reset_FR_39 = true;
-let Reset_FR_40 = true;
-let Reset_FR_41 = true;
-let Reset_FR_42 = true;
-let Reset_FR_43 = true;
-let Reset_FR_44 = true;
-let Reset_FR_45 = true;
-let Reset_FR_46 = true;
-let Reset_FR_47 = true;
-let Reset_FR_48 = true;
-let Reset_FR_49 = true;
-let Reset_FR_50 = true;
-let Reset_FR_51 = true;
-let Reset_FR_52 = true;
-let Reset_FR_53 = true;
-let Reset_FR_54 = true;
-let Reset_FR_55 = true;
-let Reset_FR_56 = true;
-let Reset_FR_57 = true;
-let Reset_FR_58 = true;
-let Reset_FR_59 = true;
-let Reset_FR_60 = true;
-let Reset_FR_61 = true;
-let Reset_FR_62 = true;
-let Reset_FR_63 = true;
-let Reset_FR_64 = true;
-let Reset_FR_65 = true;
-let Reset_FR_66 = true;
-let Reset_FR_67 = true;
-let Reset_FR_68 = true;
-let Reset_FR_69 = true;
-let Reset_FR_70 = true;
-let Reset_FR_71 = true;
-let Reset_FR_72 = true;
-let Reset_FR_73 = true;
-let Reset_FR_74 = true;
-let Reset_FR_75 = true;
-let Reset_FR_76 = true;
-let Reset_FR_77 = true;
-let Reset_FR_78 = true;
-let Reset_FR_79 = true;
-let Reset_FR_80 = true;
-let Reset_FR_81 = true;
-let Reset_FR_82 = true;
-let Reset_FR_83 = true;
-let Reset_FR_84 = true;
-let Reset_FR_85 = true;
-let Reset_FR_86 = true;
-let Reset_FR_87 = true;
-let Reset_FR_88 = true;
-let Reset_FR_89 = true;
-let Reset_FR_90 = true;
-let Reset_FR_91 = true;
-let Reset_FR_92 = true;
-let Reset_FR_93 = true;
-let Reset_FR_94 = true;
-let Reset_FR_95 = true;
-
 function over_FR_62() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_01.style.backgroundColor = com_over_color;
-        COM_01.style.color = text_com_over_color;
-        COM_01.style.transition = transition;
         COM_01.style.opacity = opacity_1;
     }
-    FR_62.style.fill = map_over_color;
-    FR_62.style.transition = transition;
+    FR_62.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_62() {
@@ -480,23 +564,17 @@ function onclick_FR_62() {
 function reset_FR_62() {
     if (Reset_FR_62 == true) {
         if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
-            COM_01.style.backgroundColor = com_color;
-            COM_01.style.color = text_com_color;
             COM_01.style.opacity = opacity_0;
         }
-        FR_62.style.fill = map_color;
+        FR_62.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_59() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_01.style.backgroundColor = com_over_color;
-        COM_01.style.color = text_com_over_color;
-        COM_01.style.transition = transition;
         COM_01.style.opacity = opacity_1;
     }
-    FR_59.style.fill = map_over_color;
-    FR_59.style.transition = transition;
+    FR_59.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_59() {
@@ -509,23 +587,17 @@ function onclick_FR_59() {
 function reset_FR_59() {
     if (Reset_FR_59 == true) {
         if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
-            COM_01.style.backgroundColor = com_color;
-            COM_01.style.color = text_com_color;
             COM_01.style.opacity = opacity_0;
         }
-        FR_59.style.fill = map_color;
+        FR_59.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_02() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_01.style.backgroundColor = com_over_color;
-        COM_01.style.color = text_com_over_color;
-        COM_01.style.transition = transition;
         COM_01.style.opacity = opacity_1;
     }
-    FR_02.style.fill = map_over_color;
-    FR_02.style.transition = transition;
+    FR_02.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_02() {
@@ -538,23 +610,17 @@ function onclick_FR_02() {
 function reset_FR_02() {
     if (Reset_FR_02 == true) {
         if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
-            COM_01.style.backgroundColor = com_color;
-            COM_01.style.color = text_com_color;
             COM_01.style.opacity = opacity_0;
         }
-        FR_02.style.fill = map_color;
+        FR_02.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_60() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_01.style.backgroundColor = com_over_color;
-        COM_01.style.color = text_com_over_color;
-        COM_01.style.transition = transition;
         COM_01.style.opacity = opacity_1;
     }
-    FR_60.style.fill = map_over_color;
-    FR_60.style.transition = transition;
+    FR_60.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_60() {
@@ -567,23 +633,17 @@ function onclick_FR_60() {
 function reset_FR_60() {
     if (Reset_FR_60 == true) {
         if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
-            COM_01.style.backgroundColor = com_color;
-            COM_01.style.color = text_com_color;
             COM_01.style.opacity = opacity_0;
         }
-        FR_60.style.fill = map_color;
+        FR_60.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_80() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_01.style.backgroundColor = com_over_color;
-        COM_01.style.color = text_com_over_color;
-        COM_01.style.transition = transition;
         COM_01.style.opacity = opacity_1;
     }
-    FR_80.style.fill = map_over_color;
-    FR_80.style.transition = transition;
+    FR_80.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_80() {
@@ -596,23 +656,17 @@ function onclick_FR_80() {
 function reset_FR_80() {
     if (Reset_FR_80 == true) {
         if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
-            COM_01.style.backgroundColor = com_color;
-            COM_01.style.color = text_com_color;
             COM_01.style.opacity = opacity_0;
         }
-        FR_80.style.fill = map_color;
+        FR_80.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_76() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_01.style.backgroundColor = com_over_color;
-        COM_01.style.color = text_com_over_color;
-        COM_01.style.transition = transition;
         COM_01.style.opacity = opacity_1;
     }
-    FR_76.style.fill = map_over_color;
-    FR_76.style.transition = transition;
+    FR_76.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_76() {
@@ -625,23 +679,17 @@ function onclick_FR_76() {
 function reset_FR_76() {
     if (Reset_FR_76 == true) {
         if (Reset_FR_02 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_62 == true & Reset_FR_76 == true & Reset_FR_80 == true) {
-            COM_01.style.backgroundColor = com_color;
-            COM_01.style.color = text_com_color;
             COM_01.style.opacity = opacity_0;
         }
-        FR_76.style.fill = map_color;
+        FR_76.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_53() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_53.style.fill = map_over_color;
-    FR_53.style.transition = transition;
+    FR_53.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_53() {
@@ -654,23 +702,17 @@ function onclick_FR_53() {
 function reset_FR_53() {
     if (Reset_FR_53 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_53.style.fill = map_color;
+        FR_53.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_44() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_44.style.fill = map_over_color;
-    FR_44.style.transition = transition;
+    FR_44.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_44() {
@@ -683,23 +725,17 @@ function onclick_FR_44() {
 function reset_FR_44() {
     if (Reset_FR_44 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_44.style.fill = map_color;
+        FR_44.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_85() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_85.style.fill = map_over_color;
-    FR_85.style.transition = transition;
+    FR_85.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_85() {
@@ -712,23 +748,17 @@ function onclick_FR_85() {
 function reset_FR_85() {
     if (Reset_FR_85 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_85.style.fill = map_color;
+        FR_85.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_79() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_79.style.fill = map_over_color;
-    FR_79.style.transition = transition;
+    FR_79.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_79() {
@@ -741,23 +771,17 @@ function onclick_FR_79() {
 function reset_FR_79() {
     if (Reset_FR_79 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_79.style.fill = map_color;
+        FR_79.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_49() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_49.style.fill = map_over_color;
-    FR_49.style.transition = transition;
+    FR_49.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_49() {
@@ -770,23 +794,17 @@ function onclick_FR_49() {
 function reset_FR_49() {
     if (Reset_FR_49 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_49.style.fill = map_color;
+        FR_49.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_72() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_72.style.fill = map_over_color;
-    FR_72.style.transition = transition;
+    FR_72.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_72() {
@@ -799,23 +817,17 @@ function onclick_FR_72() {
 function reset_FR_72() {
     if (Reset_FR_72 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_72.style.fill = map_color;
+        FR_72.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_41() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_41.style.fill = map_over_color;
-    FR_41.style.transition = transition;
+    FR_41.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_41() {
@@ -828,23 +840,17 @@ function onclick_FR_41() {
 function reset_FR_41() {
     if (Reset_FR_41 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_41.style.fill = map_color;
+        FR_41.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_37() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_37.style.fill = map_over_color;
-    FR_37.style.transition = transition;
+    FR_37.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_37() {
@@ -857,23 +863,17 @@ function onclick_FR_37() {
 function reset_FR_37() {
     if (Reset_FR_37 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_37.style.fill = map_color;
+        FR_37.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_86() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_86.style.fill = map_over_color;
-    FR_86.style.transition = transition;
+    FR_86.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_86() {
@@ -886,23 +886,17 @@ function onclick_FR_86() {
 function reset_FR_86() {
     if (Reset_FR_86 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_86.style.fill = map_color;
+        FR_86.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_18() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_18.style.fill = map_over_color;
-    FR_18.style.transition = transition;
+    FR_18.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_18() {
@@ -915,23 +909,17 @@ function onclick_FR_18() {
 function reset_FR_18() {
     if (Reset_FR_18 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_18.style.fill = map_color;
+        FR_18.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_36() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_02.style.backgroundColor = com_over_color;
-        COM_02.style.color = text_com_over_color;
-        COM_02.style.transition = transition;
         COM_02.style.opacity = opacity_1;
     }
-    FR_36.style.fill = map_over_color;
-    FR_36.style.transition = transition;
+    FR_36.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_36() {
@@ -944,23 +932,17 @@ function onclick_FR_36() {
 function reset_FR_36() {
     if (Reset_FR_36 == true) {
         if (Reset_FR_53 == true & Reset_FR_72 == true & Reset_FR_41 == true & Reset_FR_18 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_49 == true & Reset_FR_44 == true & Reset_FR_85 == true & Reset_FR_79 == true & Reset_FR_86 == true) {
-            COM_02.style.backgroundColor = com_color;
-            COM_02.style.color = text_com_color;
             COM_02.style.opacity = opacity_0;
         }
-        FR_36.style.fill = map_color;
+        FR_36.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_50() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_50.style.fill = map_over_color;
-    FR_50.style.transition = transition;
+    FR_50.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_50() {
@@ -973,23 +955,17 @@ function onclick_FR_50() {
 function reset_FR_50() {
     if (Reset_FR_50 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_50.style.fill = map_color;
+    FR_50.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_14() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_14.style.fill = map_over_color;
-    FR_14.style.transition = transition;
+    FR_14.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_14() {
@@ -1002,23 +978,17 @@ function onclick_FR_14() {
 function reset_FR_14() {
     if (Reset_FR_14 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_14.style.fill = map_color;
+    FR_14.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_61() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_61.style.fill = map_over_color;
-    FR_61.style.transition = transition;
+    FR_61.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_61() {
@@ -1031,23 +1001,17 @@ function onclick_FR_61() {
 function reset_FR_61() {
     if (Reset_FR_61 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_61.style.fill = map_color;
+    FR_61.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_27() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_27.style.fill = map_over_color;
-    FR_27.style.transition = transition;
+    FR_27.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_27() {
@@ -1060,23 +1024,17 @@ function onclick_FR_27() {
 function reset_FR_27() {
     if (Reset_FR_27 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_27.style.fill = map_color;
+    FR_27.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_28() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_28.style.fill = map_over_color;
-    FR_28.style.transition = transition;
+    FR_28.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_28() {
@@ -1089,23 +1047,17 @@ function onclick_FR_28() {
 function reset_FR_28() {
     if (Reset_FR_28 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_28.style.fill = map_color;
+    FR_28.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_78() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_78.style.fill = map_over_color;
-    FR_78.style.transition = transition;
+    FR_78.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_78() {
@@ -1118,23 +1070,17 @@ function onclick_FR_78() {
 function reset_FR_78() {
     if (Reset_FR_78 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_78.style.fill = map_color;
+    FR_78.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_95() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_95.style.fill = map_over_color;
-    FR_95.style.transition = transition;
+    FR_95.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_95() {
@@ -1147,23 +1093,17 @@ function onclick_FR_95() {
 function reset_FR_95() {
     if (Reset_FR_95 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_95.style.fill = map_color;
+    FR_95.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_91() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_91.style.fill = map_over_color;
-    FR_91.style.transition = transition;
+    FR_91.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_91() {
@@ -1176,23 +1116,17 @@ function onclick_FR_91() {
 function reset_FR_91() {
     if (Reset_FR_91 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_91.style.fill = map_color;
+    FR_91.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_45() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_45.style.fill = map_over_color;
-    FR_45.style.transition = transition;
+    FR_45.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_45() {
@@ -1205,23 +1139,17 @@ function onclick_FR_45() {
 function reset_FR_45() {
     if (Reset_FR_45 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_45.style.fill = map_color;
+    FR_45.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_92() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_92.style.fill = map_over_color;
-    FR_92.style.transition = transition;
+    FR_92.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_92() {
@@ -1234,23 +1162,17 @@ function onclick_FR_92() {
 function reset_FR_92() {
     if (Reset_FR_92 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_92.style.fill = map_color;
+    FR_92.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_75() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_75.style.fill = map_over_color;
-    FR_75.style.transition = transition;
+    FR_75.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_75() {
@@ -1263,23 +1185,17 @@ function onclick_FR_75() {
 function reset_FR_75() {
     if (Reset_FR_75 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_75.style.fill = map_color;
+    FR_75.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_93() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_93.style.fill = map_over_color;
-    FR_93.style.transition = transition;
+    FR_93.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_93() {
@@ -1292,23 +1208,17 @@ function onclick_FR_93() {
 function reset_FR_93() {
     if (Reset_FR_93 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_93.style.fill = map_color;
+    FR_93.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_94() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_03.style.backgroundColor = com_over_color;
-        COM_03.style.color = text_com_over_color;
-        COM_03.style.transition = transition;
         COM_03.style.opacity = opacity_1;
     }
-    FR_94.style.fill = map_over_color;
-    FR_94.style.transition = transition;
+    FR_94.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_94() {
@@ -1321,23 +1231,17 @@ function onclick_FR_94() {
 function reset_FR_94() {
     if (Reset_FR_94 == true) {
         if (Reset_FR_50 == true & Reset_FR_14 == true & Reset_FR_61 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_78 == true & Reset_FR_95 == true & Reset_FR_91 == true & Reset_FR_45 == true & Reset_FR_75 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true) {
-	        COM_03.style.backgroundColor = com_color;
-        	COM_03.style.color = text_com_color;
             COM_03.style.opacity = opacity_0;
 	}
-        FR_94.style.fill = map_color;
+    FR_94.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_74() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_74.style.fill = map_over_color;
-    FR_74.style.transition = transition;
+    FR_74.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_74() {
@@ -1350,23 +1254,17 @@ function onclick_FR_74() {
 function reset_FR_74() {
     if (Reset_FR_74 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_74.style.fill = map_color;
+    FR_74.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_73() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_73.style.fill = map_over_color;
-    FR_73.style.transition = transition;
+    FR_73.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_73() {
@@ -1379,23 +1277,17 @@ function onclick_FR_73() {
 function reset_FR_73() {
     if (Reset_FR_73 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_73.style.fill = map_color;
+    FR_73.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_01() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_01.style.fill = map_over_color;
-    FR_01.style.transition = transition;
+    FR_01.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_01() {
@@ -1408,23 +1300,17 @@ function onclick_FR_01() {
 function reset_FR_01() {
     if (Reset_FR_01 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_01.style.fill = map_color;
+    FR_01.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_38() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_38.style.fill = map_over_color;
-    FR_38.style.transition = transition;
+    FR_38.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_38() {
@@ -1437,23 +1323,17 @@ function onclick_FR_38() {
 function reset_FR_38() {
     if (Reset_FR_38 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_38.style.fill = map_color;
+    FR_38.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_26() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_26.style.fill = map_over_color;
-    FR_26.style.transition = transition;
+    FR_26.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_26() {
@@ -1466,23 +1346,17 @@ function onclick_FR_26() {
 function reset_FR_26() {
     if (Reset_FR_26 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_26.style.fill = map_color;
+    FR_26.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_07() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_07.style.fill = map_over_color;
-    FR_07.style.transition = transition;
+    FR_07.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_07() {
@@ -1495,23 +1369,17 @@ function onclick_FR_07() {
 function reset_FR_07() {
     if (Reset_FR_07 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_07.style.fill = map_color;
+    FR_07.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_43() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_43.style.fill = map_over_color;
-    FR_43.style.transition = transition;
+    FR_43.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_43() {
@@ -1524,23 +1392,17 @@ function onclick_FR_43() {
 function reset_FR_43() {
     if (Reset_FR_43 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_43.style.fill = map_color;
+    FR_43.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_42() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_04.style.backgroundColor = com_over_color;
-        COM_04.style.color = text_com_over_color;
-        COM_04.style.transition = transition;
         COM_04.style.opacity = opacity_1;
     }
-    FR_42.style.fill = map_over_color;
-    FR_42.style.transition = transition;
+    FR_42.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_42() {
@@ -1553,23 +1415,17 @@ function onclick_FR_42() {
 function reset_FR_42() {
     if (Reset_FR_42 == true) {
         if (Reset_FR_01 == true & Reset_FR_74 == true & Reset_FR_73 == true & Reset_FR_38 == true & Reset_FR_26 == true & Reset_FR_07 == true & Reset_FR_42 == true & Reset_FR_43 == true) {
-	        COM_04.style.backgroundColor = com_color;
-        	COM_04.style.color = text_com_color;
             COM_04.style.opacity = opacity_0;
 	}
-        FR_42.style.fill = map_color;
+    FR_42.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_90() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_90.style.fill = map_over_color;
-    FR_90.style.transition = transition;
+    FR_90.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_90() {
@@ -1582,23 +1438,17 @@ function onclick_FR_90() {
 function reset_FR_90() {
     if (Reset_FR_90 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_90.style.fill = map_color;
+    FR_90.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_25() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_25.style.fill = map_over_color;
-    FR_25.style.transition = transition;
+    FR_25.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_25() {
@@ -1611,23 +1461,17 @@ function onclick_FR_25() {
 function reset_FR_25() {
     if (Reset_FR_25 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_25.style.fill = map_color;
+    FR_25.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_70() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_70.style.fill = map_over_color;
-    FR_70.style.transition = transition;
+    FR_70.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_70() {
@@ -1640,23 +1484,17 @@ function onclick_FR_70() {
 function reset_FR_70() {
     if (Reset_FR_70 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_70.style.fill = map_color;
+    FR_70.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_39() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_39.style.fill = map_over_color;
-    FR_39.style.transition = transition;
+    FR_39.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_39() {
@@ -1669,23 +1507,17 @@ function onclick_FR_39() {
 function reset_FR_39() {
     if (Reset_FR_39 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_39.style.fill = map_color;
+    FR_39.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_21() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_21.style.fill = map_over_color;
-    FR_21.style.transition = transition;
+    FR_21.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_21() {
@@ -1698,23 +1530,17 @@ function onclick_FR_21() {
 function reset_FR_21() {
     if (Reset_FR_21 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_21.style.fill = map_color;
+    FR_21.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_71() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_71.style.fill = map_over_color;
-    FR_71.style.transition = transition;
+    FR_71.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_71() {
@@ -1727,23 +1553,17 @@ function onclick_FR_71() {
 function reset_FR_71() {
     if (Reset_FR_71 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_71.style.fill = map_color;
+    FR_71.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_69() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_69.style.fill = map_over_color;
-    FR_69.style.transition = transition;
+    FR_69.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_69() {
@@ -1756,23 +1576,17 @@ function onclick_FR_69() {
 function reset_FR_69() {
     if (Reset_FR_69 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_69.style.fill = map_color;
+    FR_69.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_58() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_58.style.fill = map_over_color;
-    FR_58.style.transition = transition;
+    FR_58.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_58() {
@@ -1785,23 +1599,17 @@ function onclick_FR_58() {
 function reset_FR_58() {
     if (Reset_FR_58 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_58.style.fill = map_color;
+    FR_58.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_03() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_03.style.fill = map_over_color;
-    FR_03.style.transition = transition;
+    FR_03.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_03() {
@@ -1814,23 +1622,17 @@ function onclick_FR_03() {
 function reset_FR_03() {
     if (Reset_FR_03 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_03.style.fill = map_color;
+    FR_03.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_63() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_63.style.fill = map_over_color;
-    FR_63.style.transition = transition;
+    FR_63.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_63() {
@@ -1843,23 +1645,17 @@ function onclick_FR_63() {
 function reset_FR_63() {
     if (Reset_FR_63 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_63.style.fill = map_color;
+    FR_63.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_23() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_05.style.backgroundColor = com_over_color;
-        COM_05.style.color = text_com_over_color;
-        COM_05.style.transition = transition;
         COM_05.style.opacity = opacity_1;
     }
-    FR_23.style.fill = map_over_color;
-    FR_23.style.transition = transition;
+    FR_23.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_23() {
@@ -1872,23 +1668,17 @@ function onclick_FR_23() {
 function reset_FR_23() {
     if (Reset_FR_23 == true) {
         if (Reset_FR_90 == true & Reset_FR_25 == true & Reset_FR_70 == true & Reset_FR_21 == true & Reset_FR_39 == true & Reset_FR_71 == true & Reset_FR_58 == true & Reset_FR_69 == true & Reset_FR_03 == true & Reset_FR_63 == true & Reset_FR_23 == true) {
-        	COM_05.style.backgroundColor = com_color;
-        	COM_05.style.color = text_com_color;
             COM_05.style.opacity = opacity_0;
 	}
-        FR_23.style.fill = map_color;
+    FR_23.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_17() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_17.style.fill = map_over_color;
-    FR_17.style.transition = transition;
+    FR_17.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_17() {
@@ -1901,23 +1691,17 @@ function onclick_FR_17() {
 function reset_FR_17() {
     if (Reset_FR_17 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_17.style.fill = map_color;
+        FR_17.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_16() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_16.style.fill = map_over_color;
-    FR_16.style.transition = transition;
+    FR_16.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_16() {
@@ -1930,23 +1714,17 @@ function onclick_FR_16() {
 function reset_FR_16() {
     if (Reset_FR_16 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_16.style.fill = map_color;
+        FR_16.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_87() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_87.style.fill = map_over_color;
-    FR_87.style.transition = transition;
+    FR_87.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_87() {
@@ -1959,23 +1737,17 @@ function onclick_FR_87() {
 function reset_FR_87() {
     if (Reset_FR_87 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_87.style.fill = map_color;
+        FR_87.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_19() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_19.style.fill = map_over_color;
-    FR_19.style.transition = transition;
+    FR_19.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_19() {
@@ -1988,23 +1760,17 @@ function onclick_FR_19() {
 function reset_FR_19() {
     if (Reset_FR_19 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_19.style.fill = map_color;
+        FR_19.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_15() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_15.style.fill = map_over_color;
-    FR_15.style.transition = transition;
+    FR_15.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_15() {
@@ -2017,23 +1783,17 @@ function onclick_FR_15() {
 function reset_FR_15() {
     if (Reset_FR_15 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_15.style.fill = map_color;
+        FR_15.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_24() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_24.style.fill = map_over_color;
-    FR_24.style.transition = transition;
+    FR_24.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_24() {
@@ -2046,23 +1806,17 @@ function onclick_FR_24() {
 function reset_FR_24() {
     if (Reset_FR_24 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_24.style.fill = map_color;
+        FR_24.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_46() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_46.style.fill = map_over_color;
-    FR_46.style.transition = transition;
+    FR_46.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_46() {
@@ -2075,23 +1829,17 @@ function onclick_FR_46() {
 function reset_FR_46() {
     if (Reset_FR_46 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_46.style.fill = map_color;
+        FR_46.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_15() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_15.style.fill = map_over_color;
-    FR_15.style.transition = transition;
+    FR_15.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_15() {
@@ -2104,23 +1852,17 @@ function onclick_FR_15() {
 function reset_FR_15() {
     if (Reset_FR_15 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_15.style.fill = map_color;
+        FR_15.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_12() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_12.style.fill = map_over_color;
-    FR_12.style.transition = transition;
+    FR_12.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_12() {
@@ -2133,23 +1875,17 @@ function onclick_FR_12() {
 function reset_FR_12() {
     if (Reset_FR_12 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_12.style.fill = map_color;
+        FR_12.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_81() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_81.style.fill = map_over_color;
-    FR_81.style.transition = transition;
+    FR_81.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_81() {
@@ -2162,23 +1898,17 @@ function onclick_FR_81() {
 function reset_FR_81() {
     if (Reset_FR_81 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_81.style.fill = map_color;
+        FR_81.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_82() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_82.style.fill = map_over_color;
-    FR_82.style.transition = transition;
+    FR_82.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_82() {
@@ -2191,23 +1921,17 @@ function onclick_FR_82() {
 function reset_FR_82() {
     if (Reset_FR_82 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_82.style.fill = map_color;
+        FR_82.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_47() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_47.style.fill = map_over_color;
-    FR_47.style.transition = transition;
+    FR_47.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_47() {
@@ -2220,23 +1944,17 @@ function onclick_FR_47() {
 function reset_FR_47() {
     if (Reset_FR_47 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_47.style.fill = map_color;
+        FR_47.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_33() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_33.style.fill = map_over_color;
-    FR_33.style.transition = transition;
+    FR_33.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_33() {
@@ -2249,23 +1967,17 @@ function onclick_FR_33() {
 function reset_FR_33() {
     if (Reset_FR_33 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_33.style.fill = map_color;
+        FR_33.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_11() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_11.style.fill = map_over_color;
-    FR_11.style.transition = transition;
+    FR_11.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_11() {
@@ -2278,23 +1990,17 @@ function onclick_FR_11() {
 function reset_FR_11() {
     if (Reset_FR_11 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_11.style.fill = map_color;
+        FR_11.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_31() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_31.style.fill = map_over_color;
-    FR_31.style.transition = transition;
+    FR_31.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_31() {
@@ -2307,23 +2013,17 @@ function onclick_FR_31() {
 function reset_FR_31() {
     if (Reset_FR_31 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_31.style.fill = map_color;
+        FR_31.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_32() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_32.style.fill = map_over_color;
-    FR_32.style.transition = transition;
+    FR_32.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_32() {
@@ -2336,23 +2036,17 @@ function onclick_FR_32() {
 function reset_FR_32() {
     if (Reset_FR_32 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_32.style.fill = map_color;
+        FR_32.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_40() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_40.style.fill = map_over_color;
-    FR_40.style.transition = transition;
+    FR_40.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_40() {
@@ -2365,23 +2059,17 @@ function onclick_FR_40() {
 function reset_FR_40() {
     if (Reset_FR_40 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_40.style.fill = map_color;
+        FR_40.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_66() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_66.style.fill = map_over_color;
-    FR_66.style.transition = transition;
+    FR_66.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_66() {
@@ -2394,23 +2082,17 @@ function onclick_FR_66() {
 function reset_FR_66() {
     if (Reset_FR_66 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_66.style.fill = map_color;
+        FR_66.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_09() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_09.style.fill = map_over_color;
-    FR_09.style.transition = transition;
+    FR_09.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_09() {
@@ -2423,23 +2105,17 @@ function onclick_FR_09() {
 function reset_FR_09() {
     if (Reset_FR_09 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_09.style.fill = map_color;
+        FR_09.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_65() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_65.style.fill = map_over_color;
-    FR_65.style.transition = transition;
+    FR_65.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_65() {
@@ -2452,23 +2128,17 @@ function onclick_FR_65() {
 function reset_FR_65() {
     if (Reset_FR_65 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_65.style.fill = map_color;
+        FR_65.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_64() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_06.style.backgroundColor = com_over_color;
-        COM_06.style.color = text_com_over_color;
-        COM_06.style.transition = transition;
         COM_06.style.opacity = opacity_1;
     }
-    FR_64.style.fill = map_over_color;
-    FR_64.style.transition = transition;
+    FR_64.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_64() {
@@ -2481,23 +2151,17 @@ function onclick_FR_64() {
 function reset_FR_64() {
     if (Reset_FR_64 == true) {
         if (Reset_FR_17 == true & Reset_FR_16 == true & Reset_FR_87 == true & Reset_FR_19 == true & Reset_FR_15 == true & Reset_FR_12 == true & Reset_FR_81 == true & Reset_FR_46 == true & Reset_FR_24 == true & Reset_FR_33 == true & Reset_FR_47 == true & Reset_FR_82 == true & Reset_FR_11 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_40 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_09 == true & Reset_FR_66 == true) {
-            COM_06.style.backgroundColor = com_color;
-            COM_06.style.color = text_com_color;
             COM_06.style.opacity = opacity_0;
         }
-        FR_64.style.fill = map_color;
+        FR_64.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_2A() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_2A.style.fill = map_over_color;
-    FR_2A.style.transition = transition;
+    FR_2A.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_2A() {
@@ -2510,23 +2174,17 @@ function onclick_FR_2A() {
 function reset_FR_2A() {
     if (Reset_FR_2A == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
-	}
-        FR_2A.style.fill = map_color;
+	    }
+        FR_2A.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_2B() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_2B.style.fill = map_over_color;
-    FR_2B.style.transition = transition;
+    FR_2B.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_2B() {
@@ -2539,23 +2197,17 @@ function onclick_FR_2B() {
 function reset_FR_2B() {
     if (Reset_FR_2B == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
-	}
-        FR_2B.style.fill = map_color;
+	    }
+        FR_2B.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_06() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_06.style.fill = map_over_color;
-    FR_06.style.transition = transition;
+    FR_06.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_06() {
@@ -2568,23 +2220,17 @@ function onclick_FR_06() {
 function reset_FR_06() {
     if (Reset_FR_06 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_06.style.fill = map_color;
+    FR_06.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_05() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_05.style.fill = map_over_color;
-    FR_05.style.transition = transition;
+    FR_05.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_05() {
@@ -2597,23 +2243,17 @@ function onclick_FR_05() {
 function reset_FR_05() {
     if (Reset_FR_05 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_05.style.fill = map_color;
+    FR_05.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_04() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_04.style.fill = map_over_color;
-    FR_04.style.transition = transition;
+    FR_04.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_04() {
@@ -2626,23 +2266,17 @@ function onclick_FR_04() {
 function reset_FR_04() {
     if (Reset_FR_04 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_04.style.fill = map_color;
+    FR_04.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_83() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_83.style.fill = map_over_color;
-    FR_83.style.transition = transition;
+    FR_83.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_83() {
@@ -2655,23 +2289,17 @@ function onclick_FR_83() {
 function reset_FR_83() {
     if (Reset_FR_83 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_83.style.fill = map_color;
+    FR_83.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_84() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_84.style.fill = map_over_color;
-    FR_84.style.transition = transition;
+    FR_84.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_84() {
@@ -2684,23 +2312,17 @@ function onclick_FR_84() {
 function reset_FR_84() {
     if (Reset_FR_84 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_84.style.fill = map_color;
+    FR_84.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_13() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_13.style.fill = map_over_color;
-    FR_13.style.transition = transition;
+    FR_13.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_13() {
@@ -2713,23 +2335,17 @@ function onclick_FR_13() {
 function reset_FR_13() {
     if (Reset_FR_13 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_13.style.fill = map_color;
+    FR_13.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_30() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_30.style.fill = map_over_color;
-    FR_30.style.transition = transition;
+    FR_30.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_30() {
@@ -2742,23 +2358,17 @@ function onclick_FR_30() {
 function reset_FR_30() {
     if (Reset_FR_30 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_30.style.fill = map_color;
+    FR_30.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_34() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_34.style.fill = map_over_color;
-    FR_34.style.transition = transition;
+    FR_34.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_34() {
@@ -2771,23 +2381,17 @@ function onclick_FR_34() {
 function reset_FR_34() {
     if (Reset_FR_34 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_34.style.fill = map_color;
+    FR_34.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_48() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_07.style.backgroundColor = com_over_color;
-        COM_07.style.color = text_com_over_color;
-        COM_07.style.transition = transition;
         COM_07.style.opacity = opacity_1;
     }
-    FR_48.style.fill = map_over_color;
-    FR_48.style.transition = transition;
+    FR_48.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_48() {
@@ -2800,23 +2404,17 @@ function onclick_FR_48() {
 function reset_FR_48() {
     if (Reset_FR_48 == true) {
         if (Reset_FR_48 == true & Reset_FR_30 == true & Reset_FR_34 == true & Reset_FR_84 == true & Reset_FR_13 == true & Reset_FR_83 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_2B == true & Reset_FR_2A == true) {
-        	COM_07.style.backgroundColor = com_color;
-        	COM_07.style.color = text_com_color;
             COM_07.style.opacity = opacity_0;
 	}
-        FR_48.style.fill = map_color;
+    FR_48.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_77() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_77.style.fill = map_over_color;
-    FR_77.style.transition = transition;
+    FR_77.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_77() {
@@ -2829,23 +2427,17 @@ function onclick_FR_77() {
 function reset_FR_77() {
     if (Reset_FR_77 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_77.style.fill = map_color;
+    FR_77.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_89() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_89.style.fill = map_over_color;
-    FR_89.style.transition = transition;
+    FR_89.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_89() {
@@ -2858,23 +2450,17 @@ function onclick_FR_89() {
 function reset_FR_89() {
     if (Reset_FR_89 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_89.style.fill = map_color;
+    FR_89.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_10() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_10.style.fill = map_over_color;
-    FR_10.style.transition = transition;
+    FR_10.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_10() {
@@ -2887,23 +2473,17 @@ function onclick_FR_10() {
 function reset_FR_10() {
     if (Reset_FR_10 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_10.style.fill = map_color;
+    FR_10.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_51() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_51.style.fill = map_over_color;
-    FR_51.style.transition = transition;
+    FR_51.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_51() {
@@ -2916,23 +2496,17 @@ function onclick_FR_51() {
 function reset_FR_51() {
     if (Reset_FR_51 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_51.style.fill = map_color;
+    FR_51.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_08() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_08.style.fill = map_over_color;
-    FR_08.style.transition = transition;
+    FR_08.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_08() {
@@ -2945,23 +2519,17 @@ function onclick_FR_08() {
 function reset_FR_08() {
     if (Reset_FR_08 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_08.style.fill = map_color;
+    FR_08.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_55() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_55.style.fill = map_over_color;
-    FR_55.style.transition = transition;
+    FR_55.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_55() {
@@ -2974,23 +2542,17 @@ function onclick_FR_55() {
 function reset_FR_55() {
     if (Reset_FR_55 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_55.style.fill = map_color;
+    FR_55.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_52() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_52.style.fill = map_over_color;
-    FR_52.style.transition = transition;
+    FR_52.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_52() {
@@ -3003,23 +2565,17 @@ function onclick_FR_52() {
 function reset_FR_52() {
     if (Reset_FR_52 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_52.style.fill = map_color;
+    FR_52.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_88() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_88.style.fill = map_over_color;
-    FR_88.style.transition = transition;
+    FR_88.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_88() {
@@ -3032,23 +2588,17 @@ function onclick_FR_88() {
 function reset_FR_88() {
     if (Reset_FR_88 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_88.style.fill = map_color;
+    FR_88.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_54() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_54.style.fill = map_over_color;
-    FR_54.style.transition = transition;
+    FR_54.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_54() {
@@ -3061,23 +2611,17 @@ function onclick_FR_54() {
 function reset_FR_54() {
     if (Reset_FR_54 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_54.style.fill = map_color;
+    FR_54.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_57() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_57.style.fill = map_over_color;
-    FR_57.style.transition = transition;
+    FR_57.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_57() {
@@ -3090,23 +2634,17 @@ function onclick_FR_57() {
 function reset_FR_57() {
     if (Reset_FR_57 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_57.style.fill = map_color;
+    FR_57.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_67() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_67.style.fill = map_over_color;
-    FR_67.style.transition = transition;
+    FR_67.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_67() {
@@ -3119,23 +2657,17 @@ function onclick_FR_67() {
 function reset_FR_67() {
     if (Reset_FR_67 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_67.style.fill = map_color;
+    FR_67.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_68() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_08.style.backgroundColor = com_over_color;
-        COM_08.style.color = text_com_over_color;
-        COM_08.style.transition = transition;
         COM_08.style.opacity = opacity_1;
     }
-    FR_68.style.fill = map_over_color;
-    FR_68.style.transition = transition;
+    FR_68.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_68() {
@@ -3148,23 +2680,17 @@ function onclick_FR_68() {
 function reset_FR_68() {
     if (Reset_FR_68 == true) {
         if (Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_88 == true & Reset_FR_54 == true & Reset_FR_57 == true & Reset_FR_55 == true & Reset_FR_52 == true & Reset_FR_08 == true & Reset_FR_51 == true & Reset_FR_10 == true & Reset_FR_77 == true & Reset_FR_89 == true) {
-        	COM_08.style.backgroundColor = com_color;
-        	COM_08.style.color = text_com_color;
             COM_08.style.opacity = opacity_0;
 	}
-        FR_68.style.fill = map_color;
+    FR_68.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_29() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_09.style.backgroundColor = com_over_color;
-        COM_09.style.color = text_com_over_color;
-        COM_09.style.transition = transition;
         COM_09.style.opacity = opacity_1;
     }
-    FR_29.style.fill = map_over_color;
-    FR_29.style.transition = transition;
+    FR_29.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_29() {
@@ -3177,23 +2703,17 @@ function onclick_FR_29() {
 function reset_FR_29() {
     if (Reset_FR_29 == true) {
         if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
-        	COM_09.style.backgroundColor = com_color;
-        	COM_09.style.color = text_com_color;
             COM_09.style.opacity = opacity_0;
 	}
-        FR_29.style.fill = map_color;
+    FR_29.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_22() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_09.style.backgroundColor = com_over_color;
-        COM_09.style.color = text_com_over_color;
-        COM_09.style.transition = transition;
         COM_09.style.opacity = opacity_1;
     }
-    FR_22.style.fill = map_over_color;
-    FR_22.style.transition = transition;
+    FR_22.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_22() {
@@ -3206,23 +2726,17 @@ function onclick_FR_22() {
 function reset_FR_22() {
     if (Reset_FR_22 == true) {
         if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
-        	COM_09.style.backgroundColor = com_color;
-        	COM_09.style.color = text_com_color;
             COM_09.style.opacity = opacity_0;
 	}
-        FR_22.style.fill = map_color;
+    FR_22.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_56() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_09.style.backgroundColor = com_over_color;
-        COM_09.style.color = text_com_over_color;
-        COM_09.style.transition = transition;
         COM_09.style.opacity = opacity_1;
     }
-    FR_56.style.fill = map_over_color;
-    FR_56.style.transition = transition;
+    FR_56.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_56() {
@@ -3235,23 +2749,17 @@ function onclick_FR_56() {
 function reset_FR_56() {
     if (Reset_FR_56 == true) {
         if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
-        	COM_09.style.backgroundColor = com_color;
-        	COM_09.style.color = text_com_color;
             COM_09.style.opacity = opacity_0;
 	}
-        FR_56.style.fill = map_color;
+    FR_56.style.fillOpacity = fill_opacity_0;
     }
 };
 
 function over_FR_35() {
     if( Reset_FR_01 == true & Reset_FR_02 == true & Reset_FR_03 == true & Reset_FR_04 == true & Reset_FR_05 == true & Reset_FR_06 == true & Reset_FR_07 == true & Reset_FR_08 == true & Reset_FR_09 == true & Reset_FR_10 == true & Reset_FR_11 == true & Reset_FR_12 == true & Reset_FR_13 == true & Reset_FR_14 == true & Reset_FR_15 == true & Reset_FR_16 == true & Reset_FR_17 == true & Reset_FR_18 == true & Reset_FR_19 == true & Reset_FR_2A == true & Reset_FR_2B == true & Reset_FR_21 == true & Reset_FR_22 == true & Reset_FR_23 == true & Reset_FR_24 == true & Reset_FR_25 == true & Reset_FR_26 == true & Reset_FR_27 == true & Reset_FR_28 == true & Reset_FR_29 == true & Reset_FR_30 == true & Reset_FR_31 == true & Reset_FR_32 == true & Reset_FR_33 == true & Reset_FR_34 == true & Reset_FR_35 == true & Reset_FR_36 == true & Reset_FR_37 == true & Reset_FR_38 == true & Reset_FR_39 == true & Reset_FR_40 == true & Reset_FR_41 == true & Reset_FR_42 == true & Reset_FR_43 == true & Reset_FR_44 == true & Reset_FR_45 == true & Reset_FR_46 == true & Reset_FR_47 == true & Reset_FR_48 == true & Reset_FR_49 == true & Reset_FR_50 == true & Reset_FR_51 == true & Reset_FR_52 == true & Reset_FR_53 == true & Reset_FR_54 == true & Reset_FR_55 == true & Reset_FR_56 == true & Reset_FR_57 == true & Reset_FR_58 == true & Reset_FR_59 == true & Reset_FR_60 == true & Reset_FR_61 == true & Reset_FR_62 == true & Reset_FR_63 == true & Reset_FR_64 == true & Reset_FR_65 == true & Reset_FR_66 == true & Reset_FR_67 == true & Reset_FR_68 == true & Reset_FR_69 == true & Reset_FR_70 == true & Reset_FR_71 == true & Reset_FR_72 == true & Reset_FR_73 == true & Reset_FR_74 == true & Reset_FR_75 == true & Reset_FR_76 == true & Reset_FR_77 == true & Reset_FR_78 == true & Reset_FR_79 == true & Reset_FR_80 == true & Reset_FR_81 == true & Reset_FR_82 == true & Reset_FR_83 == true & Reset_FR_84 == true & Reset_FR_85 == true & Reset_FR_86 == true & Reset_FR_87 == true & Reset_FR_88 == true & Reset_FR_89 == true & Reset_FR_90 == true & Reset_FR_91 == true & Reset_FR_92 == true & Reset_FR_93 == true & Reset_FR_94 == true & Reset_FR_95 == true) {
-        COM_09.style.backgroundColor = com_over_color;
-        COM_09.style.color = text_com_over_color;
-        COM_09.style.transition = transition;
         COM_09.style.opacity = opacity_1;
     }
-    FR_35.style.fill = map_over_color;
-    FR_35.style.transition = transition;
+    FR_35.style.fillOpacity = fill_opacity_1;
 };
 
 function onclick_FR_35() {
@@ -3264,10 +2772,8 @@ function onclick_FR_35() {
 function reset_FR_35() {
     if (Reset_FR_35 == true) {
         if (Reset_FR_29 == true & Reset_FR_22 == true & Reset_FR_35 == true & Reset_FR_56 == true) {
-        	COM_09.style.backgroundColor = com_color;
-        	COM_09.style.color = text_com_color;
             COM_09.style.opacity = opacity_0;
 	}
-        FR_35.style.fill = map_color;
+    FR_35.style.fillOpacity = fill_opacity_0;
     }
 };
