@@ -1,12 +1,12 @@
 /* Corps du site */
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-Medium.ttf");
+  src: url("../fonts/WorkSans-Medium.ttf");
 }
 
 @font-face {
   font-family: "Aldrich";
-  src: url("/fonts/Aldrich-Regular.ttf");
+  src: url("../fonts/Aldrich-Regular.ttf");
 }
 
 html, body {
