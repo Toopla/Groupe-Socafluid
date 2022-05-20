@@ -248,19 +248,19 @@ html, body {
 }
 
 .gr-1:hover {
-  transform: scaleX(1.3) scaleY(1.3);
+  transform: scaleX(1.1) scaleY(1.1);
   z-index: 10;
   transition: all 0.5s;
 }
 
 .gr-2:hover {
-  transform: scaleX(1.3) scaleY(1.3);
+  transform: scaleX(1.1) scaleY(1.1);
   z-index: 10;
   transition: all 0.5s;
 }
 
 .gr-3:hover {
-  transform: scaleX(1.3) scaleY(1.3);
+  transform: scaleX(1.1) scaleY(1.1);
   z-index: 10;
   transition: all 0.5s;
 }
@@ -552,7 +552,7 @@ html, body {
 }
 
 #image-sopra-1 {
-  background: url(/images/DSC_8475.jpg);
+  background: url(../images/DSC_8475.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -560,7 +560,7 @@ html, body {
 }
 
 #image-sopra-2 {
-  background: url(/images/DSC_0999.jpg);
+  background: url(../images/DSC_0999.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -568,7 +568,7 @@ html, body {
 }
 
 #image-sopra-3 {
-  background: url(/images/DSC_0841.jpg);
+  background: url(../images/DSC_0841.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
