@@ -424,6 +424,18 @@ html, body {
   border-top-right-radius: 15px;
 }
 
+.tab-sopra i.fa-xmark {
+  padding-left: 20px;
+}
+
+.tab-setem i.fa-xmark {
+  padding-left: 105px;
+}
+
+.tab-avalco i.fa-xmark {
+  padding-left: 105px;
+}
+
 .box-close {
   width: 60px;
   height: 40px;
