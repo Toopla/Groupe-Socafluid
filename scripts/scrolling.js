@@ -10,12 +10,7 @@ $(document).ready(function() {
         loopBottom: false,
         loopTop: false,
         css3: true,
-        navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
-            'position': 'right',
-            'tooltips': []
-        },
+        navigation: false,
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,
@@ -24,10 +19,44 @@ $(document).ready(function() {
         animateAnchor: false,
 
 		//events
-		onLeave: function(index, nextIndex, direction){},
-		afterLoad: function(anchorLink, index){},
+		onLeave: function(index, nextIndex, direction){
+            if (nextIndex == 7 && direction == 'down') {
+                $.fn.pagepiling.moveTo(6);
+            }
+            if (index == 8 || index == 9 || index == 10 && nextIndex == 3) {
+                $.fn.pagepiling.setAllowScrolling(true);
+                $.fn.pagepiling.setKeyboardScrolling(true);
+            }
+            if (nextIndex == 8 || nextIndex == 9 || nextIndex == 10) {
+                $.fn.pagepiling.setAllowScrolling(false);
+                $.fn.pagepiling.setKeyboardScrolling(false);
+                testScrollUp = false;
+                testScrollDown = false;
+            }
+        },
+		afterLoad: function(anchorLink, index){
+            if(index == 1 || index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 7) {
+                testScrollUp = true;
+                testScrollDown = true;
+            };
+        },
 		afterRender: function(){},
 	});
     $.fn.pagepiling.setScrollingSpeed(100);
     
 });
+
+testScrollUp = true;
+testScrollDown = true;
+
+function scrollUp() {
+    if(testScrollUp == true) {
+        $.fn.pagepiling.moveSectionUp();
+    };
+};
+
+function scrollDown() {
+    if(testScrollDown == true) {
+        $.fn.pagepiling.moveSectionDown();
+    };
+};
