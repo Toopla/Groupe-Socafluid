@@ -157,7 +157,7 @@ html, body {
 /* La French Fab */
 
 #my-video {
-  width: 102%;
+  width: 101%;
   height: 100%;
   object-fit: cover;
   position: fixed;
