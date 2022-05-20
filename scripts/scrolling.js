@@ -28,4 +28,6 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){},
 		afterRender: function(){},
 	});
+    $.fn.pagepiling.setScrollingSpeed(100);
+    
 });
