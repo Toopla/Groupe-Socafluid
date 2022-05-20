@@ -40,7 +40,9 @@ $(document).ready(function() {
                 testScrollDown = true;
             };
         },
-		afterRender: function(){},
+		afterRender: function(){
+            
+        },
 	});
     $.fn.pagepiling.setScrollingSpeed(100);
     
