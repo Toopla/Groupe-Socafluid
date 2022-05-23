@@ -3,8 +3,8 @@ $(document).ready(function() {
 	    menu: '#menu',
         direction: 'vertical',
         verticalCentered: true,
-        sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF'],
-        anchors: ['page1','page2','page3','page4','page5','page6','page7','page8','page9','page10'],
+        sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF','FFFFFF','FFFFFF','FFFFFF','FFFFFF','FFFFFF'],
+        anchors: ['page1','page2','page3','page4','page5','page6','page7','page8','page9','page10','page11','page12'],
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: false,
@@ -28,6 +28,16 @@ $(document).ready(function() {
                 $.fn.pagepiling.setKeyboardScrolling(true);
             }
             if (nextIndex == 8 || nextIndex == 9 || nextIndex == 10) {
+                $.fn.pagepiling.setAllowScrolling(false);
+                $.fn.pagepiling.setKeyboardScrolling(false);
+                testScrollUp = false;
+                testScrollDown = false;
+            }
+            if (index == 11 || index == 12 && nextIndex == 5) {
+                $.fn.pagepiling.setAllowScrolling(true);
+                $.fn.pagepiling.setKeyboardScrolling(true);
+            }
+            if (nextIndex == 11 || nextIndex == 12) {
                 $.fn.pagepiling.setAllowScrolling(false);
                 $.fn.pagepiling.setKeyboardScrolling(false);
                 testScrollUp = false;
